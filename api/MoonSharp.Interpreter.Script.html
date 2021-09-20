@@ -1,0 +1,1742 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Script
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Script
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Script">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Script" data-uid="MoonSharp.Interpreter.Script" class="text-break">Class Script
+  </h1>
+  <div class="markdown level0 summary"><p>This class implements a MoonSharp scripting session. Multiple Script objects can coexist in the same program but cannot share
+data among themselves unless some mechanism is put in place.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Script</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MoonSharp.Interpreter.IScriptPrivateResource.html">IScriptPrivateResource</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.html">MoonSharp.Interpreter</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Script_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Script : object, IScriptPrivateResource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Script__ctor_" data-uid="MoonSharp.Interpreter.Script.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Script__ctor" data-uid="MoonSharp.Interpreter.Script.#ctor">Script()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a> clas.s</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Script()</code></pre>
+  </div>
+  
+  
+  <a id="MoonSharp_Interpreter_Script__ctor_" data-uid="MoonSharp.Interpreter.Script.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Script__ctor_MoonSharp_Interpreter_CoreModules_" data-uid="MoonSharp.Interpreter.Script.#ctor(MoonSharp.Interpreter.CoreModules)">Script(CoreModules)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Script(CoreModules coreModules)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.CoreModules.html">CoreModules</a></td>
+        <td><span class="parametername">coreModules</span></td>
+        <td><p>The core modules to be pre-registered in the default global table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Script_LUA_VERSION" data-uid="MoonSharp.Interpreter.Script.LUA_VERSION">LUA_VERSION</h4>
+  <div class="markdown level1 summary"><p>The Lua version being supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LUA_VERSION = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Script_VERSION" data-uid="MoonSharp.Interpreter.Script.VERSION">VERSION</h4>
+  <div class="markdown level1 summary"><p>The version of the MoonSharp engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string VERSION = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_DebuggerEnabled_" data-uid="MoonSharp.Interpreter.Script.DebuggerEnabled*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_DebuggerEnabled" data-uid="MoonSharp.Interpreter.Script.DebuggerEnabled">DebuggerEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the debugger is enabled.
+Note that unless a debugger attached, this property returns a
+value which might not reflect the real status of the debugger.
+Use this property if you want to disable the debugger for some
+executions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DebuggerEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_DefaultOptions_" data-uid="MoonSharp.Interpreter.Script.DefaultOptions*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_DefaultOptions" data-uid="MoonSharp.Interpreter.Script.DefaultOptions">DefaultOptions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the script loader which will be used as the value of the
+ScriptLoader property for all newly created scripts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptOptions DefaultOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptOptions.html">ScriptOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_GlobalOptions_" data-uid="MoonSharp.Interpreter.Script.GlobalOptions*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_GlobalOptions" data-uid="MoonSharp.Interpreter.Script.GlobalOptions">GlobalOptions</h4>
+  <div class="markdown level1 summary"><p>Gets the global options, that is options which cannot be customized per-script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScriptGlobalOptions GlobalOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptGlobalOptions.html">ScriptGlobalOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Globals_" data-uid="MoonSharp.Interpreter.Script.Globals*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Globals" data-uid="MoonSharp.Interpreter.Script.Globals">Globals</h4>
+  <div class="markdown level1 summary"><p>Gets the default global table for this script. Unless a different table is intentionally passed (or setfenv has been used)
+execution uses this table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table Globals { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Options_" data-uid="MoonSharp.Interpreter.Script.Options*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Options" data-uid="MoonSharp.Interpreter.Script.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Gets access to the script options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptOptions.html">ScriptOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_PerformanceStats_" data-uid="MoonSharp.Interpreter.Script.PerformanceStats*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_PerformanceStats" data-uid="MoonSharp.Interpreter.Script.PerformanceStats">PerformanceStats</h4>
+  <div class="markdown level1 summary"><p>Gets access to performance statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerformanceStatistics PerformanceStats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Diagnostics.PerformanceStatistics.html">PerformanceStatistics</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Registry_" data-uid="MoonSharp.Interpreter.Script.Registry*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Registry" data-uid="MoonSharp.Interpreter.Script.Registry">Registry</h4>
+  <div class="markdown level1 summary"><p>MoonSharp (like Lua itself) provides a registry, a predefined table that can be used by any CLR code to
+store whatever Lua values it needs to store.
+Any CLR code can store data into this table, but it should take care to choose keys
+that are different from those used by other libraries, to avoid collisions.
+Typically, you should use as key a string GUID, a string containing your library name, or a
+userdata with the address of a CLR object in your code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table Registry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_SourceCodeCount_" data-uid="MoonSharp.Interpreter.Script.SourceCodeCount*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_SourceCodeCount" data-uid="MoonSharp.Interpreter.Script.SourceCodeCount">SourceCodeCount</h4>
+  <div class="markdown level1 summary"><p>Gets the source code count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SourceCodeCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The source code count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_AttachDebugger_" data-uid="MoonSharp.Interpreter.Script.AttachDebugger*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_AttachDebugger_MoonSharp_Interpreter_Debugging_IDebugger_" data-uid="MoonSharp.Interpreter.Script.AttachDebugger(MoonSharp.Interpreter.Debugging.IDebugger)">AttachDebugger(IDebugger)</h4>
+  <div class="markdown level1 summary"><p>Attaches a debugger. This usually should be called by the debugger itself and not by user code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachDebugger(IDebugger debugger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.IDebugger.html">IDebugger</a></td>
+        <td><span class="parametername">debugger</span></td>
+        <td><p>The debugger object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Call_" data-uid="MoonSharp.Interpreter.Script.Call*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Call_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Script.Call(MoonSharp.Interpreter.DynValue)">Call(DynValue)</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Call(DynValue function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Call_" data-uid="MoonSharp.Interpreter.Script.Call*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Call_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue___" data-uid="MoonSharp.Interpreter.Script.Call(MoonSharp.Interpreter.DynValue,MoonSharp.Interpreter.DynValue[])">Call(DynValue, DynValue[])</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Call(DynValue function, params DynValue[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Call_" data-uid="MoonSharp.Interpreter.Script.Call*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Call_MoonSharp_Interpreter_DynValue_System_Object___" data-uid="MoonSharp.Interpreter.Script.Call(MoonSharp.Interpreter.DynValue,System.Object[])">Call(DynValue, Object[])</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Call(DynValue function, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Call_" data-uid="MoonSharp.Interpreter.Script.Call*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Call_System_Object_" data-uid="MoonSharp.Interpreter.Script.Call(System.Object)">Call(Object)</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Call(object function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Call_" data-uid="MoonSharp.Interpreter.Script.Call*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Call_System_Object_System_Object___" data-uid="MoonSharp.Interpreter.Script.Call(System.Object,System.Object[])">Call(Object, Object[])</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue Call(object function, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_CreateConstantDynamicExpression_" data-uid="MoonSharp.Interpreter.Script.CreateConstantDynamicExpression*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_CreateConstantDynamicExpression_System_String_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Script.CreateConstantDynamicExpression(System.String,MoonSharp.Interpreter.DynValue)">CreateConstantDynamicExpression(String, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Creates a new dynamic expression which is actually quite static, returning always the same constant value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicExpression CreateConstantDynamicExpression(string code, DynValue constant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the not-so-dynamic expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">constant</span></td>
+        <td><p>The constant to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynamicExpression.html">DynamicExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_CreateCoroutine_" data-uid="MoonSharp.Interpreter.Script.CreateCoroutine*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_CreateCoroutine_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Script.CreateCoroutine(MoonSharp.Interpreter.DynValue)">CreateCoroutine(DynValue)</h4>
+  <div class="markdown level1 summary"><p>Creates a coroutine pointing at the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue CreateCoroutine(DynValue function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The coroutine handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_CreateCoroutine_" data-uid="MoonSharp.Interpreter.Script.CreateCoroutine*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_CreateCoroutine_System_Object_" data-uid="MoonSharp.Interpreter.Script.CreateCoroutine(System.Object)">CreateCoroutine(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates a coroutine pointing at the specified function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue CreateCoroutine(object function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The coroutine handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_CreateDynamicExpression_" data-uid="MoonSharp.Interpreter.Script.CreateDynamicExpression*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_CreateDynamicExpression_System_String_" data-uid="MoonSharp.Interpreter.Script.CreateDynamicExpression(System.String)">CreateDynamicExpression(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new dynamic expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicExpression CreateDynamicExpression(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the expression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynamicExpression.html">DynamicExpression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_DoFile_" data-uid="MoonSharp.Interpreter.Script.DoFile*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_DoFile_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.DoFile(System.String,MoonSharp.Interpreter.Table,System.String)">DoFile(String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads and executes a file containing a Lua/MoonSharp script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue DoFile(string filename, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_DoStream_" data-uid="MoonSharp.Interpreter.Script.DoStream*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_DoStream_Stream_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.DoStream(Stream,MoonSharp.Interpreter.Table,System.String)">DoStream(Stream, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads and executes a stream containing a Lua/MoonSharp script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue DoStream(Stream stream, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_DoString_" data-uid="MoonSharp.Interpreter.Script.DoString*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_DoString_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.DoString(System.String,MoonSharp.Interpreter.Table,System.String)">DoString(String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads and executes a string containing a Lua/MoonSharp script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue DoString(string code, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_Dump_" data-uid="MoonSharp.Interpreter.Script.Dump*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_Dump_MoonSharp_Interpreter_DynValue_Stream_" data-uid="MoonSharp.Interpreter.Script.Dump(MoonSharp.Interpreter.DynValue,Stream)">Dump(DynValue, Stream)</h4>
+  <div class="markdown level1 summary"><p>Dumps on the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump(DynValue function, Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_GetBanner_" data-uid="MoonSharp.Interpreter.Script.GetBanner*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_GetBanner_System_String_" data-uid="MoonSharp.Interpreter.Script.GetBanner(System.String)">GetBanner(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a banner string with copyright info, link to website, version, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBanner(string subproduct = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">subproduct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_GetSourceCode_" data-uid="MoonSharp.Interpreter.Script.GetSourceCode*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_GetSourceCode_System_Int32_" data-uid="MoonSharp.Interpreter.Script.GetSourceCode(System.Int32)">GetSourceCode(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the source code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SourceCode GetSourceCode(int sourceCodeID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceCodeID</span></td>
+        <td><p>The source code identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.SourceCode.html">SourceCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_GetTypeMetatable_" data-uid="MoonSharp.Interpreter.Script.GetTypeMetatable*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_GetTypeMetatable_MoonSharp_Interpreter_DataType_" data-uid="MoonSharp.Interpreter.Script.GetTypeMetatable(MoonSharp.Interpreter.DataType)">GetTypeMetatable(DataType)</h4>
+  <div class="markdown level1 summary"><p>Gets a type metatable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table GetTypeMetatable(DataType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DataType.html">DataType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_LoadFile_" data-uid="MoonSharp.Interpreter.Script.LoadFile*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_LoadFile_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.LoadFile(System.String,MoonSharp.Interpreter.Table,System.String)">LoadFile(String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a string containing a Lua/MoonSharp script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue LoadFile(string filename, Table globalContext = null, string friendlyFilename = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyFilename</span></td>
+        <td><p>The filename to be used in error messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_LoadFunction_" data-uid="MoonSharp.Interpreter.Script.LoadFunction*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_LoadFunction_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.LoadFunction(System.String,MoonSharp.Interpreter.Table,System.String)">LoadFunction(String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a string containing a Lua/MoonSharp function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue LoadFunction(string code, Table globalTable = null, string funcFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">funcFriendlyName</span></td>
+        <td><p>Name of the function used to report errors, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_LoadStream_" data-uid="MoonSharp.Interpreter.Script.LoadStream*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_LoadStream_Stream_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.LoadStream(Stream,MoonSharp.Interpreter.Table,System.String)">LoadStream(Stream, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a Lua/MoonSharp script from a System.IO.Stream. NOTE: This will <em>NOT</em> close the stream!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue LoadStream(Stream stream, Table globalTable = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream containing code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_LoadString_" data-uid="MoonSharp.Interpreter.Script.LoadString*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_LoadString_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.Script.LoadString(System.String,MoonSharp.Interpreter.Table,System.String)">LoadString(String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a string containing a Lua/MoonSharp script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue LoadString(string code, Table globalTable = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_RequireModule_" data-uid="MoonSharp.Interpreter.Script.RequireModule*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_RequireModule_System_String_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Script.RequireModule(System.String,MoonSharp.Interpreter.Table)">RequireModule(String, Table)</h4>
+  <div class="markdown level1 summary"><p>Loads a module as per the &quot;require&quot; Lua function. <a href="http://www.lua.org/pil/8.1.html">http://www.lua.org/pil/8.1.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue RequireModule(string modname, Table globalContext = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modname</span></td>
+        <td><p>The module name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptRuntimeException.html">ScriptRuntimeException</a></td>
+        <td><p>Raised if module is not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_RunFile_" data-uid="MoonSharp.Interpreter.Script.RunFile*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_RunFile_System_String_" data-uid="MoonSharp.Interpreter.Script.RunFile(System.String)">RunFile(String)</h4>
+  <div class="markdown level1 summary"><p>Runs the specified file with all possible defaults for quick experimenting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue RunFile(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_RunString_" data-uid="MoonSharp.Interpreter.Script.RunString*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_RunString_System_String_" data-uid="MoonSharp.Interpreter.Script.RunString(System.String)">RunString(String)</h4>
+  <div class="markdown level1 summary"><p>Runs the specified code with all possible defaults for quick experimenting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue RunString(string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The Lua/MoonSharp code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_SetTypeMetatable_" data-uid="MoonSharp.Interpreter.Script.SetTypeMetatable*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_SetTypeMetatable_MoonSharp_Interpreter_DataType_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Script.SetTypeMetatable(MoonSharp.Interpreter.DataType,MoonSharp.Interpreter.Table)">SetTypeMetatable(DataType, Table)</h4>
+  <div class="markdown level1 summary"><p>Sets a type metatable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTypeMetatable(DataType type, Table metatable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DataType.html">DataType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type. Must be Nil, Boolean, Number, String or Function</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">metatable</span></td>
+        <td><p>The metatable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_WarmUp_" data-uid="MoonSharp.Interpreter.Script.WarmUp*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_WarmUp" data-uid="MoonSharp.Interpreter.Script.WarmUp">WarmUp()</h4>
+  <div class="markdown level1 summary"><p>Warms up the parser/lexer structures so that MoonSharp operations start faster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WarmUp()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Script_MoonSharp_Interpreter_IScriptPrivateResource_OwnerScript_" data-uid="MoonSharp.Interpreter.Script.MoonSharp#Interpreter#IScriptPrivateResource#OwnerScript*"></a>
+  <h4 id="MoonSharp_Interpreter_Script_MoonSharp_Interpreter_IScriptPrivateResource_OwnerScript" data-uid="MoonSharp.Interpreter.Script.MoonSharp#Interpreter#IScriptPrivateResource#OwnerScript">IScriptPrivateResource.OwnerScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Script IScriptPrivateResource.OwnerScript { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.IScriptPrivateResource.html">IScriptPrivateResource</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_DoStringAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.DoStringAsync(Script, String, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_DoStreamAsync_MoonSharp_Interpreter_Script_Stream_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.DoStreamAsync(Script, Stream, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_DoFileAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.DoFileAsync(Script, String, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_LoadFunctionAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.LoadFunctionAsync(Script, String, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_LoadStringAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.LoadStringAsync(Script, String, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_LoadStreamAsync_MoonSharp_Interpreter_Script_Stream_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.LoadStreamAsync(Script, Stream, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_DumpAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_Stream_">AsyncExtensions.DumpAsync(Script, DynValue, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_LoadFileAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_">AsyncExtensions.LoadFileAsync(Script, String, Table, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_">AsyncExtensions.CallAsync(Script, DynValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue___">AsyncExtensions.CallAsync(Script, DynValue, DynValue[])</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_System_Object___">AsyncExtensions.CallAsync(Script, DynValue, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_System_Object_">AsyncExtensions.CallAsync(Script, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_System_Object_System_Object___">AsyncExtensions.CallAsync(Script, Object, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.AsyncExtensions.html#MoonSharp_Interpreter_AsyncExtensions_CreateDynamicExpressionAsync_MoonSharp_Interpreter_Script_System_String_">AsyncExtensions.CreateDynamicExpressionAsync(Script, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

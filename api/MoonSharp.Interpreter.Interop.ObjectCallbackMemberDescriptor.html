@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObjectCallbackMemberDescriptor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObjectCallbackMemberDescriptor
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor" class="text-break">Class ObjectCallbackMemberDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>Member descriptor which allows to define new members which behave similarly to class instance members</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html">FunctionMemberDescriptorBase</a></div>
+    <div class="level2"><span class="xref">ObjectCallbackMemberDescriptor</span></div>
+      <div class="level3"><a class="xref" href="MoonSharp.Interpreter.Interop.ArrayMemberDescriptor.html">ArrayMemberDescriptor</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a></div>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_IsStatic">FunctionMemberDescriptorBase.IsStatic</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_Name">FunctionMemberDescriptorBase.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_SortDiscriminant">FunctionMemberDescriptorBase.SortDiscriminant</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_Parameters">FunctionMemberDescriptorBase.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_ExtensionMethodType">FunctionMemberDescriptorBase.ExtensionMethodType</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_VarArgsArrayType">FunctionMemberDescriptorBase.VarArgsArrayType</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_VarArgsElementType">FunctionMemberDescriptorBase.VarArgsElementType</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_Initialize_System_String_System_Boolean_MoonSharp_Interpreter_Interop_BasicDescriptors_ParameterDescriptor___System_Boolean_">FunctionMemberDescriptorBase.Initialize(String, Boolean, ParameterDescriptor[], Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_GetCallback_MoonSharp_Interpreter_Script_System_Object_">FunctionMemberDescriptorBase.GetCallback(Script, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_GetCallbackFunction_MoonSharp_Interpreter_Script_System_Object_">FunctionMemberDescriptorBase.GetCallbackFunction(Script, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_GetCallbackAsDynValue_MoonSharp_Interpreter_Script_System_Object_">FunctionMemberDescriptorBase.GetCallbackAsDynValue(Script, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_CreateCallbackDynValue_MoonSharp_Interpreter_Script_MethodInfo_System_Object_">FunctionMemberDescriptorBase.CreateCallbackDynValue(Script, MethodInfo, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_BuildArgumentList_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_CallbackArguments_List_System_Int32___">FunctionMemberDescriptorBase.BuildArgumentList(Script, Object, ScriptExecutionContext, CallbackArguments, List&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_BuildReturnValue_MoonSharp_Interpreter_Script_List_System_Int32__System_Object___System_Object_">FunctionMemberDescriptorBase.BuildReturnValue(Script, List&lt;Int32&gt;, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_MemberAccess">FunctionMemberDescriptorBase.MemberAccess</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_GetValue_MoonSharp_Interpreter_Script_System_Object_">FunctionMemberDescriptorBase.GetValue(Script, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_SetValue_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_">FunctionMemberDescriptorBase.SetValue(Script, Object, DynValue)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Interop.html">MoonSharp.Interpreter.Interop</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObjectCallbackMemberDescriptor : FunctionMemberDescriptorBase, IOverloadableMemberDescriptor, IMemberDescriptor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_System_String_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor(System.String)">ObjectCallbackMemberDescriptor(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.html">ObjectCallbackMemberDescriptor</a> class.
+A new member descriptor is defined, which is a function taking no parameters and returning void, doing nothing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectCallbackMemberDescriptor(string funcName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">funcName</span></td>
+        <td><p>Name of the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_System_String_Func_System_Object_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_CallbackArguments_System_Object__" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor(System.String,Func{System.Object,MoonSharp.Interpreter.ScriptExecutionContext,MoonSharp.Interpreter.CallbackArguments,System.Object})">ObjectCallbackMemberDescriptor(String, Func&lt;Object, ScriptExecutionContext, CallbackArguments, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.html">ObjectCallbackMemberDescriptor</a> class.
+The function described by descriptors created by this callback are defined as if they take no parameters
+and thus don't support overload resolution well (unless they really take no parameters) but can freely be
+used if no overload resolution is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectCallbackMemberDescriptor(string funcName, Func&lt;object, ScriptExecutionContext, CallbackArguments, object&gt; callBack)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">funcName</span></td>
+        <td><p>Name of the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a>, <a class="xref" href="MoonSharp.Interpreter.CallbackArguments.html">CallbackArguments</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">callBack</span></td>
+        <td><p>The callback function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor__ctor_System_String_Func_System_Object_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_CallbackArguments_System_Object__MoonSharp_Interpreter_Interop_BasicDescriptors_ParameterDescriptor___" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.#ctor(System.String,Func{System.Object,MoonSharp.Interpreter.ScriptExecutionContext,MoonSharp.Interpreter.CallbackArguments,System.Object},MoonSharp.Interpreter.Interop.BasicDescriptors.ParameterDescriptor[])">ObjectCallbackMemberDescriptor(String, Func&lt;Object, ScriptExecutionContext, CallbackArguments, Object&gt;, ParameterDescriptor[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.html">ObjectCallbackMemberDescriptor</a> class.
+Members defined with this constructor will support overload resolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectCallbackMemberDescriptor(string funcName, Func&lt;object, ScriptExecutionContext, CallbackArguments, object&gt; callBack, ParameterDescriptor[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">funcName</span></td>
+        <td><p>Name of the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a>, <a class="xref" href="MoonSharp.Interpreter.CallbackArguments.html">CallbackArguments</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">callBack</span></td>
+        <td><p>The call back.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.ParameterDescriptor.html">ParameterDescriptor</a>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor_Execute_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.Execute*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_ObjectCallbackMemberDescriptor_Execute_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_CallbackArguments_" data-uid="MoonSharp.Interpreter.Interop.ObjectCallbackMemberDescriptor.Execute(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.ScriptExecutionContext,MoonSharp.Interpreter.CallbackArguments)">Execute(Script, Object, ScriptExecutionContext, CallbackArguments)</h4>
+  <div class="markdown level1 summary"><p>The internal callback which actually executes the method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DynValue Execute(Script script, object obj, ScriptExecutionContext context, CallbackArguments args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.CallbackArguments.html">CallbackArguments</a></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MoonSharp.Interpreter.Interop.FunctionMemberDescriptorBase.html#MoonSharp_Interpreter_Interop_FunctionMemberDescriptorBase_Execute_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_CallbackArguments_">FunctionMemberDescriptorBase.Execute(Script, Object, ScriptExecutionContext, CallbackArguments)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

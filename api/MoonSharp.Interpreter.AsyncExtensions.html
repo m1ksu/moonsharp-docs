@@ -1,0 +1,1478 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsyncExtensions
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.AsyncExtensions">
+  
+  
+  <h1 id="MoonSharp_Interpreter_AsyncExtensions" data-uid="MoonSharp.Interpreter.AsyncExtensions" class="text-break">Class AsyncExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>This class contains extension methods providing async wrappers of many methods.
+Asynchronous execution is performed by scheduling the method on the thread pool (through a Task.Factory.StartNew).</p>
+<p>This type is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AsyncExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.html">MoonSharp.Interpreter</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_AsyncExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AsyncExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Closure_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Closure)">CallAsync(Closure)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls this function with the specified args</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Closure function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Closure.html">Closure</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Closure_MoonSharp_Interpreter_DynValue___" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Closure,MoonSharp.Interpreter.DynValue[])">CallAsync(Closure, DynValue[])</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls this function with the specified args</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Closure function, params DynValue[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Closure.html">Closure</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Closure_System_Object___" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Closure,System.Object[])">CallAsync(Closure, Object[])</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls this function with the specified args</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Closure function, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Closure.html">Closure</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Script,MoonSharp.Interpreter.DynValue)">CallAsync(Script, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Calls the specified function.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Script script, DynValue function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue___" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Script,MoonSharp.Interpreter.DynValue,MoonSharp.Interpreter.DynValue[])">CallAsync(Script, DynValue, DynValue[])</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls the specified function.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Script script, DynValue function, params DynValue[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_System_Object___" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Script,MoonSharp.Interpreter.DynValue,System.Object[])">CallAsync(Script, DynValue, Object[])</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls the specified function.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Script script, DynValue function, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>The return value(s) of the function call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_System_Object_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Script,System.Object)">CallAsync(Script, Object)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls the specified function.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Script script, object function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CallAsync_MoonSharp_Interpreter_Script_System_Object_System_Object___" data-uid="MoonSharp.Interpreter.AsyncExtensions.CallAsync(MoonSharp.Interpreter.Script,System.Object,System.Object[])">CallAsync(Script, Object, Object[])</h4>
+  <div class="markdown level1 summary"><p>Asynchronously calls the specified function.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; CallAsync(this Script script, object function, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The Lua/MoonSharp function to be called</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass to the function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_CreateDynamicExpressionAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CreateDynamicExpressionAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_CreateDynamicExpressionAsync_MoonSharp_Interpreter_Script_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.CreateDynamicExpressionAsync(MoonSharp.Interpreter.Script,System.String)">CreateDynamicExpressionAsync(Script, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously creates a new dynamic expression.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynamicExpression&gt; CreateDynamicExpressionAsync(this Script script, string code)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code of the expression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynamicExpression.html">DynamicExpression</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_DoFileAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoFileAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_DoFileAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoFileAsync(MoonSharp.Interpreter.Script,System.String,MoonSharp.Interpreter.Table,System.String)">DoFileAsync(Script, String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads and executes a file containing a Lua/MoonSharp script.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; DoFileAsync(this Script script, string filename, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_DoStreamAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoStreamAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_DoStreamAsync_MoonSharp_Interpreter_Script_Stream_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoStreamAsync(MoonSharp.Interpreter.Script,Stream,MoonSharp.Interpreter.Table,System.String)">DoStreamAsync(Script, Stream, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads and executes a stream containing a Lua/MoonSharp script.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; DoStreamAsync(this Script script, Stream stream, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_DoStringAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoStringAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_DoStringAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DoStringAsync(MoonSharp.Interpreter.Script,System.String,MoonSharp.Interpreter.Table,System.String)">DoStringAsync(Script, String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads and executes a string containing a Lua/MoonSharp script.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; DoStringAsync(this Script script, string code, Table globalContext = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc. Also used by debuggers to locate the original source file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing the result of the processing of the loaded chunk.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_DumpAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DumpAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_DumpAsync_MoonSharp_Interpreter_Script_MoonSharp_Interpreter_DynValue_Stream_" data-uid="MoonSharp.Interpreter.AsyncExtensions.DumpAsync(MoonSharp.Interpreter.Script,MoonSharp.Interpreter.DynValue,Stream)">DumpAsync(Script, DynValue, Stream)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously dumps a function on the specified stream.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task DumpAsync(this Script script, DynValue function, Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_EvaluateAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.EvaluateAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_EvaluateAsync_MoonSharp_Interpreter_REPL_ReplInterpreter_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.EvaluateAsync(MoonSharp.Interpreter.REPL.ReplInterpreter,System.String)">EvaluateAsync(ReplInterpreter, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously evaluates a REPL command.
+This method returns the result of the computation, or null if more input is needed for having valid code.
+In case of errors, exceptions are propagated to the caller.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; EvaluateAsync(this ReplInterpreter interpreter, string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.REPL.ReplInterpreter.html">ReplInterpreter</a></td>
+        <td><span class="parametername">interpreter</span></td>
+        <td><p>The interpreter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>The input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>This method returns the result of the computation, or null if more input is needed for a computation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_LoadFileAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadFileAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_LoadFileAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadFileAsync(MoonSharp.Interpreter.Script,System.String,MoonSharp.Interpreter.Table,System.String)">LoadFileAsync(Script, String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a string containing a Lua/MoonSharp script.
+This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; LoadFileAsync(this Script script, string filename, Table globalContext = null, string friendlyFilename = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyFilename</span></td>
+        <td><p>The filename to be used in error messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_LoadFunctionAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadFunctionAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_LoadFunctionAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadFunctionAsync(MoonSharp.Interpreter.Script,System.String,MoonSharp.Interpreter.Table,System.String)">LoadFunctionAsync(Script, String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a string containing a Lua/MoonSharp function.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; LoadFunctionAsync(this Script script, string code, Table globalTable = null, string funcFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">funcFriendlyName</span></td>
+        <td><p>Name of the function used to report errors, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_LoadStreamAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadStreamAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_LoadStreamAsync_MoonSharp_Interpreter_Script_Stream_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadStreamAsync(MoonSharp.Interpreter.Script,Stream,MoonSharp.Interpreter.Table,System.String)">LoadStreamAsync(Script, Stream, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a Lua/MoonSharp script from a System.IO.Stream. NOTE: This will <em>NOT</em> close the stream!</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; LoadStreamAsync(this Script script, Stream stream, Table globalTable = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream containing code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_LoadStringAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadStringAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_LoadStringAsync_MoonSharp_Interpreter_Script_System_String_MoonSharp_Interpreter_Table_System_String_" data-uid="MoonSharp.Interpreter.AsyncExtensions.LoadStringAsync(MoonSharp.Interpreter.Script,System.String,MoonSharp.Interpreter.Table,System.String)">LoadStringAsync(Script, String, Table, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a string containing a Lua/MoonSharp script.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; LoadStringAsync(this Script script, string code, Table globalTable = null, string codeFriendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>The code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalTable</span></td>
+        <td><p>The global table to bind to this chunk.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">codeFriendlyName</span></td>
+        <td><p>Name of the code - used to report errors, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td><p>A DynValue containing a function which will execute the loaded code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine)">ResumeAsync(Coroutine)</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_MoonSharp_Interpreter_DynValue___" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine,MoonSharp.Interpreter.DynValue[])">ResumeAsync(Coroutine, DynValue[])</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor, params DynValue[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_MoonSharp_Interpreter_ScriptExecutionContext_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine,MoonSharp.Interpreter.ScriptExecutionContext)">ResumeAsync(Coroutine, ScriptExecutionContext)</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor, ScriptExecutionContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The ScriptExecutionContext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_MoonSharp_Interpreter_ScriptExecutionContext_MoonSharp_Interpreter_DynValue___" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine,MoonSharp.Interpreter.ScriptExecutionContext,MoonSharp.Interpreter.DynValue[])">ResumeAsync(Coroutine, ScriptExecutionContext, DynValue[])</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor, ScriptExecutionContext context, params DynValue[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The ScriptExecutionContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_MoonSharp_Interpreter_ScriptExecutionContext_System_Object___" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine,MoonSharp.Interpreter.ScriptExecutionContext,System.Object[])">ResumeAsync(Coroutine, ScriptExecutionContext, Object[])</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor, ScriptExecutionContext context, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The ScriptExecutionContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync*"></a>
+  <h4 id="MoonSharp_Interpreter_AsyncExtensions_ResumeAsync_MoonSharp_Interpreter_Coroutine_System_Object___" data-uid="MoonSharp.Interpreter.AsyncExtensions.ResumeAsync(MoonSharp.Interpreter.Coroutine,System.Object[])">ResumeAsync(Coroutine, Object[])</h4>
+  <div class="markdown level1 summary"><p>Resumes the coroutine.
+Only non-CLR coroutines can be resumed with this overload of the Resume method. Use the overload accepting a ScriptExecutionContext instead.</p>
+<p>This method is supported only on .NET 4.x and .NET 4.x PCL targets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;DynValue&gt; ResumeAsync(this Coroutine cor, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Coroutine.html">Coroutine</a></td>
+        <td><span class="parametername">cor</span></td>
+        <td><p>The coroutine</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

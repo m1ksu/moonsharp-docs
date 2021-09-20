@@ -1,0 +1,1448 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserData
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserData
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.UserData">
+  
+  
+  <h1 id="MoonSharp_Interpreter_UserData" data-uid="MoonSharp.Interpreter.UserData" class="text-break">Class UserData
+  </h1>
+  <div class="markdown level0 summary"><p>Class exposing C# objects as Lua userdata.
+For efficiency, a global registry of types is maintained, instead of a per-script one.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MoonSharp.Interpreter.RefIdObject.html">RefIdObject</a></div>
+    <div class="level2"><span class="xref">UserData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.RefIdObject.html#MoonSharp_Interpreter_RefIdObject_ReferenceID">RefIdObject.ReferenceID</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.Interpreter.RefIdObject.html#MoonSharp_Interpreter_RefIdObject_FormatTypeString_System_String_">RefIdObject.FormatTypeString(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.html">MoonSharp.Interpreter</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_UserData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserData : RefIdObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_DefaultAccessMode_" data-uid="MoonSharp.Interpreter.UserData.DefaultAccessMode*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_DefaultAccessMode" data-uid="MoonSharp.Interpreter.UserData.DefaultAccessMode">DefaultAccessMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default access mode to be used in the whole application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InteropAccessMode DefaultAccessMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><p>The default access mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_Descriptor_" data-uid="MoonSharp.Interpreter.UserData.Descriptor*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_Descriptor" data-uid="MoonSharp.Interpreter.UserData.Descriptor">Descriptor</h4>
+  <div class="markdown level1 summary"><p>Gets the type descriptor of this userdata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserDataDescriptor Descriptor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_Object_" data-uid="MoonSharp.Interpreter.UserData.Object*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_Object" data-uid="MoonSharp.Interpreter.UserData.Object">Object</h4>
+  <div class="markdown level1 summary"><p>Gets the object associated to this userdata (null for statics)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Object { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegistrationPolicy_" data-uid="MoonSharp.Interpreter.UserData.RegistrationPolicy*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegistrationPolicy" data-uid="MoonSharp.Interpreter.UserData.RegistrationPolicy">RegistrationPolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the registration policy to be used in the whole application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRegistrationPolicy RegistrationPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.RegistrationPolicies.IRegistrationPolicy.html">IRegistrationPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_UserValue_" data-uid="MoonSharp.Interpreter.UserData.UserValue*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_UserValue" data-uid="MoonSharp.Interpreter.UserData.UserValue">UserValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the &quot;uservalue&quot;. See debug.getuservalue and debug.setuservalue.
+<a href="http://www.lua.org/manual/5.2/manual.html#pdf-debug.setuservalue">http://www.lua.org/manual/5.2/manual.html#pdf-debug.setuservalue</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue UserValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_Create_" data-uid="MoonSharp.Interpreter.UserData.Create*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_Create_System_Object_" data-uid="MoonSharp.Interpreter.UserData.Create(System.Object)">Create(Object)</h4>
+  <div class="markdown level1 summary"><p>Creates a userdata DynValue from the specified object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue Create(object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>The object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_Create_" data-uid="MoonSharp.Interpreter.UserData.Create*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_Create_System_Object_MoonSharp_Interpreter_Interop_IUserDataDescriptor_" data-uid="MoonSharp.Interpreter.UserData.Create(System.Object,MoonSharp.Interpreter.Interop.IUserDataDescriptor)">Create(Object, IUserDataDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Creates a userdata DynValue from the specified object, using a specific descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue Create(object o, IUserDataDescriptor descr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>The object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td><span class="parametername">descr</span></td>
+        <td><p>The descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_CreateStatic_" data-uid="MoonSharp.Interpreter.UserData.CreateStatic*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_CreateStatic_MoonSharp_Interpreter_Interop_IUserDataDescriptor_" data-uid="MoonSharp.Interpreter.UserData.CreateStatic(MoonSharp.Interpreter.Interop.IUserDataDescriptor)">CreateStatic(IUserDataDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified IUserDataDescriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic(IUserDataDescriptor descr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td><span class="parametername">descr</span></td>
+        <td><p>The IUserDataDescriptor</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_CreateStatic_" data-uid="MoonSharp.Interpreter.UserData.CreateStatic*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_CreateStatic_Type_" data-uid="MoonSharp.Interpreter.UserData.CreateStatic(Type)">CreateStatic(Type)</h4>
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic(Type t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_CreateStatic_" data-uid="MoonSharp.Interpreter.UserData.CreateStatic*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_CreateStatic__1" data-uid="MoonSharp.Interpreter.UserData.CreateStatic``1">CreateStatic&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates a static userdata DynValue from the specified Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynValue CreateStatic&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetDescriptionOfRegisteredTypes_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptionOfRegisteredTypes*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetDescriptionOfRegisteredTypes_System_Boolean_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptionOfRegisteredTypes(System.Boolean)">GetDescriptionOfRegisteredTypes(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a table with the description of registered types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Table GetDescriptionOfRegisteredTypes(bool useHistoricalData = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useHistoricalData</span></td>
+        <td><p>if set to true, it will also include the last found descriptor of all unregistered types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetDescriptorForObject_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForObject*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetDescriptorForObject_System_Object_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForObject(System.Object)">GetDescriptorForObject(Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForObject(object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetDescriptorForType_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetDescriptorForType_Type_System_Boolean_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForType(Type,System.Boolean)">GetDescriptorForType(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForType(Type type, bool searchInterfaces)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The CLR type for which the descriptor is desired.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">searchInterfaces</span></td>
+        <td><p>if set to <code>true</code> interfaces are used in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetDescriptorForType_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetDescriptorForType__1_System_Boolean_" data-uid="MoonSharp.Interpreter.UserData.GetDescriptorForType``1(System.Boolean)">GetDescriptorForType&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the best possible type descriptor for a specified CLR type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor GetDescriptorForType&lt;T&gt;(bool searchInterfaces)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">searchInterfaces</span></td>
+        <td><p>if set to <code>true</code> interfaces are used in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The CLR type for which the descriptor is desired.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetExtensionMethodsByNameAndType_" data-uid="MoonSharp.Interpreter.UserData.GetExtensionMethodsByNameAndType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetExtensionMethodsByNameAndType_System_String_Type_" data-uid="MoonSharp.Interpreter.UserData.GetExtensionMethodsByNameAndType(System.String,Type)">GetExtensionMethodsByNameAndType(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Gets all the extension methods which can match a given name and extending a given Type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IOverloadableMemberDescriptor&gt; GetExtensionMethodsByNameAndType(string name, Type extendedType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">extendedType</span></td>
+        <td><p>The extended type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetExtensionMethodsChangeVersion_" data-uid="MoonSharp.Interpreter.UserData.GetExtensionMethodsChangeVersion*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetExtensionMethodsChangeVersion" data-uid="MoonSharp.Interpreter.UserData.GetExtensionMethodsChangeVersion">GetExtensionMethodsChangeVersion()</h4>
+  <div class="markdown level1 summary"><p>Gets a number which gets incremented everytime the extension methods registry changes.
+Use this to invalidate caches based on extension methods</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetExtensionMethodsChangeVersion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_GetRegisteredTypes_" data-uid="MoonSharp.Interpreter.UserData.GetRegisteredTypes*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_GetRegisteredTypes_System_Boolean_" data-uid="MoonSharp.Interpreter.UserData.GetRegisteredTypes(System.Boolean)">GetRegisteredTypes(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets all the registered types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetRegisteredTypes(bool useHistoricalData = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useHistoricalData</span></td>
+        <td><p>if set to true, it will also include the last found descriptor of all unregistered types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_IsTypeRegistered_" data-uid="MoonSharp.Interpreter.UserData.IsTypeRegistered*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_IsTypeRegistered_Type_" data-uid="MoonSharp.Interpreter.UserData.IsTypeRegistered(Type)">IsTypeRegistered(Type)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified type is registered. Note that this should be used only to check if a descriptor
+has been registered EXACTLY. For many types a descriptor can still be created, for example through the descriptor
+of a base type or implemented interfaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeRegistered(Type t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_IsTypeRegistered_" data-uid="MoonSharp.Interpreter.UserData.IsTypeRegistered*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_IsTypeRegistered__1" data-uid="MoonSharp.Interpreter.UserData.IsTypeRegistered``1">IsTypeRegistered&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified type is registered. Note that this should be used only to check if a descriptor
+has been registered EXACTLY. For many types a descriptor can still be created, for example through the descriptor
+of a base type or implemented interfaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTypeRegistered&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterAssembly_" data-uid="MoonSharp.Interpreter.UserData.RegisterAssembly*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterAssembly_Assembly_System_Boolean_" data-uid="MoonSharp.Interpreter.UserData.RegisterAssembly(Assembly,System.Boolean)">RegisterAssembly(Assembly, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers all types marked with a MoonSharpUserDataAttribute that ar contained in an assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterAssembly(Assembly asm = null, bool includeExtensionTypes = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Assembly</span></td>
+        <td><span class="parametername">asm</span></td>
+        <td><p>The assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeExtensionTypes</span></td>
+        <td><p>if set to <code>true</code> extension types are registered to the appropriate registry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterExtensionType_" data-uid="MoonSharp.Interpreter.UserData.RegisterExtensionType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterExtensionType_Type_MoonSharp_Interpreter_InteropAccessMode_" data-uid="MoonSharp.Interpreter.UserData.RegisterExtensionType(Type,MoonSharp.Interpreter.InteropAccessMode)">RegisterExtensionType(Type, InteropAccessMode)</h4>
+  <div class="markdown level1 summary"><p>Registers an extension Type (that is a type containing extension methods)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterExtensionType(Type type, InteropAccessMode mode = InteropAccessMode.Default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The InteropAccessMode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterProxyType_" data-uid="MoonSharp.Interpreter.UserData.RegisterProxyType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterProxyType_MoonSharp_Interpreter_Interop_IProxyFactory_MoonSharp_Interpreter_InteropAccessMode_System_String_" data-uid="MoonSharp.Interpreter.UserData.RegisterProxyType(MoonSharp.Interpreter.Interop.IProxyFactory,MoonSharp.Interpreter.InteropAccessMode,System.String)">RegisterProxyType(IProxyFactory, InteropAccessMode, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a proxy type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterProxyType(IProxyFactory proxyFactory, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IProxyFactory.html">IProxyFactory</a></td>
+        <td><span class="parametername">proxyFactory</span></td>
+        <td><p>The proxy factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td><p>The access mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyName</span></td>
+        <td><p>A friendly name for the descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterProxyType_" data-uid="MoonSharp.Interpreter.UserData.RegisterProxyType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterProxyType__2_Func___1___0__MoonSharp_Interpreter_InteropAccessMode_System_String_" data-uid="MoonSharp.Interpreter.UserData.RegisterProxyType``2(Func{``1,``0},MoonSharp.Interpreter.InteropAccessMode,System.String)">RegisterProxyType&lt;TProxy, TTarget&gt;(Func&lt;TTarget, TProxy&gt;, InteropAccessMode, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a proxy type using a delegate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterProxyType&lt;TProxy, TTarget&gt;(Func&lt;TTarget, TProxy&gt; wrapDelegate, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)
+    where TProxy : class where TTarget : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;TTarget, TProxy&gt;</td>
+        <td><span class="parametername">wrapDelegate</span></td>
+        <td><p>A delegate creating a proxy object from a target object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td><p>The access mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyName</span></td>
+        <td><p>A friendly name for the descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProxy</span></td>
+        <td><p>The type of the proxy.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TTarget</span></td>
+        <td><p>The type of the target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterType_" data-uid="MoonSharp.Interpreter.UserData.RegisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterType_MoonSharp_Interpreter_Interop_IUserDataDescriptor_" data-uid="MoonSharp.Interpreter.UserData.RegisterType(MoonSharp.Interpreter.Interop.IUserDataDescriptor)">RegisterType(IUserDataDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td><span class="parametername">customDescriptor</span></td>
+        <td><p>The custom descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterType_" data-uid="MoonSharp.Interpreter.UserData.RegisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterType_Type_MoonSharp_Interpreter_Interop_IUserDataDescriptor_" data-uid="MoonSharp.Interpreter.UserData.RegisterType(Type,MoonSharp.Interpreter.Interop.IUserDataDescriptor)">RegisterType(Type, IUserDataDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(Type type, IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type to be registered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td><span class="parametername">customDescriptor</span></td>
+        <td><p>The custom descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterType_" data-uid="MoonSharp.Interpreter.UserData.RegisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterType_Type_MoonSharp_Interpreter_InteropAccessMode_System_String_" data-uid="MoonSharp.Interpreter.UserData.RegisterType(Type,MoonSharp.Interpreter.InteropAccessMode,System.String)">RegisterType(Type, InteropAccessMode, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a type for userdata interop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType(Type type, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type to be registered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td><p>The access mode (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyName</span></td>
+        <td><p>Friendly name for the type (optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterType_" data-uid="MoonSharp.Interpreter.UserData.RegisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterType__1_MoonSharp_Interpreter_Interop_IUserDataDescriptor_" data-uid="MoonSharp.Interpreter.UserData.RegisterType``1(MoonSharp.Interpreter.Interop.IUserDataDescriptor)">RegisterType&lt;T&gt;(IUserDataDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Registers a type with a custom userdata descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType&lt;T&gt;(IUserDataDescriptor customDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td><span class="parametername">customDescriptor</span></td>
+        <td><p>The custom descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to be registered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_RegisterType_" data-uid="MoonSharp.Interpreter.UserData.RegisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_RegisterType__1_MoonSharp_Interpreter_InteropAccessMode_System_String_" data-uid="MoonSharp.Interpreter.UserData.RegisterType``1(MoonSharp.Interpreter.InteropAccessMode,System.String)">RegisterType&lt;T&gt;(InteropAccessMode, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a type for userdata interop</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterType&lt;T&gt;(InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.InteropAccessMode.html">InteropAccessMode</a></td>
+        <td><span class="parametername">accessMode</span></td>
+        <td><p>The access mode (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyName</span></td>
+        <td><p>Friendly name for the type (optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to be registered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_UnregisterType_" data-uid="MoonSharp.Interpreter.UserData.UnregisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_UnregisterType_Type_" data-uid="MoonSharp.Interpreter.UserData.UnregisterType(Type)">UnregisterType(Type)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a type.
+WARNING: unregistering types at runtime is a dangerous practice and may cause unwanted errors.
+Use this only for testing purposes or to re-register the same type in a slightly different way.
+Additionally, it's a good practice to discard all previous loaded scripts after calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterType(Type t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The The type to be unregistered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_UserData_UnregisterType_" data-uid="MoonSharp.Interpreter.UserData.UnregisterType*"></a>
+  <h4 id="MoonSharp_Interpreter_UserData_UnregisterType__1" data-uid="MoonSharp.Interpreter.UserData.UnregisterType``1">UnregisterType&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Unregisters a type.
+WARNING: unregistering types at runtime is a dangerous practice and may cause unwanted errors.
+Use this only for testing purposes or to re-register the same type in a slightly different way.
+Additionally, it's a good practice to discard all previous loaded scripts after calling this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterType&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type to be unregistered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OverloadedMethodMemberDescriptor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OverloadedMethodMemberDescriptor
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor" class="text-break">Class OverloadedMethodMemberDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>Class providing easier marshalling of overloaded CLR functions</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OverloadedMethodMemberDescriptor</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOptimizableDescriptor.html">IOptimizableDescriptor</a></div>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></div>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IWireableDescriptor.html">IWireableDescriptor</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Interop.html">MoonSharp.Interpreter.Interop</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OverloadedMethodMemberDescriptor : object, IOptimizableDescriptor, IMemberDescriptor, IWireableDescriptor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_System_String_Type_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor(System.String,Type)">OverloadedMethodMemberDescriptor(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.html">OverloadedMethodMemberDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverloadedMethodMemberDescriptor(string name, Type declaringType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">declaringType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_System_String_Type_IEnumerable_MoonSharp_Interpreter_Interop_BasicDescriptors_IOverloadableMemberDescriptor__" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor(System.String,Type,IEnumerable{MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor})">OverloadedMethodMemberDescriptor(String, Type, IEnumerable&lt;IOverloadableMemberDescriptor&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.html">OverloadedMethodMemberDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverloadedMethodMemberDescriptor(string name, Type declaringType, IEnumerable&lt;IOverloadableMemberDescriptor&gt; descriptors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">declaringType</span></td>
+        <td><p>The declaring type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a>&gt;</td>
+        <td><span class="parametername">descriptors</span></td>
+        <td><p>The descriptors of the overloaded methods.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor__ctor_System_String_Type_MoonSharp_Interpreter_Interop_BasicDescriptors_IOverloadableMemberDescriptor_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.#ctor(System.String,Type,MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor)">OverloadedMethodMemberDescriptor(String, Type, IOverloadableMemberDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.html">OverloadedMethodMemberDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OverloadedMethodMemberDescriptor(string name, Type declaringType, IOverloadableMemberDescriptor descriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">declaringType</span></td>
+        <td><p>The declaring type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>The descriptor of the first overloaded method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_DeclaringType_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.DeclaringType*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_DeclaringType" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.DeclaringType">DeclaringType</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the first described overload</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type DeclaringType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_IgnoreExtensionMethods_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.IgnoreExtensionMethods*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_IgnoreExtensionMethods" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.IgnoreExtensionMethods">IgnoreExtensionMethods</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance ignores extension methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreExtensionMethods { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_IsStatic_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.IsStatic*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_IsStatic" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether there is at least one static method in the resolution list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_MemberAccess_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.MemberAccess*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_MemberAccess" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.MemberAccess">MemberAccess</h4>
+  <div class="markdown level1 summary"><p>Gets the types of access supported by this member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemberDescriptorAccess MemberAccess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.MemberDescriptorAccess.html">MemberDescriptorAccess</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_Name_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.Name*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_Name" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the first described overload</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_OverloadCount_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.OverloadCount*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_OverloadCount" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.OverloadCount">OverloadCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of overloaded methods contained in this collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OverloadCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The overload count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_AddOverload_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.AddOverload*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_AddOverload_MoonSharp_Interpreter_Interop_BasicDescriptors_IOverloadableMemberDescriptor_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.AddOverload(MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor)">AddOverload(IOverloadableMemberDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Adds an overload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOverload(IOverloadableMemberDescriptor overload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOverloadableMemberDescriptor.html">IOverloadableMemberDescriptor</a></td>
+        <td><span class="parametername">overload</span></td>
+        <td><p>The overload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetCallback_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetCallback*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetCallback_MoonSharp_Interpreter_Script_System_Object_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetCallback(MoonSharp.Interpreter.Script,System.Object)">GetCallback(Script, Object)</h4>
+  <div class="markdown level1 summary"><p>Gets a callback function as a delegate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;ScriptExecutionContext, CallbackArguments, DynValue&gt; GetCallback(Script script, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script for which the callback must be generated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object (null for static).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="MoonSharp.Interpreter.ScriptExecutionContext.html">ScriptExecutionContext</a>, <a class="xref" href="MoonSharp.Interpreter.CallbackArguments.html">CallbackArguments</a>, <a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetCallbackFunction_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetCallbackFunction*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetCallbackFunction_MoonSharp_Interpreter_Script_System_Object_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetCallbackFunction(MoonSharp.Interpreter.Script,System.Object)">GetCallbackFunction(Script, Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the callback function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CallbackFunction GetCallbackFunction(Script script, object obj = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script for which the callback must be generated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object (null for static).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.CallbackFunction.html">CallbackFunction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetValue_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetValue*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_GetValue_MoonSharp_Interpreter_Script_System_Object_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.GetValue(MoonSharp.Interpreter.Script,System.Object)">GetValue(Script, Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of this member as a <a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a> to be exposed to scripts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynValue GetValue(Script script, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object owning this member, or null if static.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><p>The value of this member as a <a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_PrepareForWiring_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.PrepareForWiring*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_PrepareForWiring_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.PrepareForWiring(MoonSharp.Interpreter.Table)">PrepareForWiring(Table)</h4>
+  <div class="markdown level1 summary"><p>Prepares the descriptor for hard-wiring.
+The descriptor fills the passed table with all the needed data for hardwire generators to generate the appropriate code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareForWiring(Table t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The table to be filled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_SetValue_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.SetValue*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_SetValue_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.SetValue(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue)">SetValue(Script, Object, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of this member from a <a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(Script script, object obj, DynValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object owning this member, or null if static.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_MoonSharp_Interpreter_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize_" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.MoonSharp#Interpreter#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_OverloadedMethodMemberDescriptor_MoonSharp_Interpreter_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize" data-uid="MoonSharp.Interpreter.Interop.OverloadedMethodMemberDescriptor.MoonSharp#Interpreter#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize">IOptimizableDescriptor.Optimize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IOptimizableDescriptor.Optimize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOptimizableDescriptor.html">IOptimizableDescriptor</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IWireableDescriptor.html">IWireableDescriptor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDebugger
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDebugger
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Debugging.IDebugger">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Debugging_IDebugger" data-uid="MoonSharp.Interpreter.Debugging.IDebugger" class="text-break">Interface IDebugger
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for debuggers to implement, in order to provide debugging facilities to Scripts.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Debugging.html">MoonSharp.Interpreter.Debugging</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Debugging_IDebugger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDebugger</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_GetAction_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetAction*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_GetAction_System_Int32_MoonSharp_Interpreter_Debugging_SourceRef_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetAction(System.Int32,MoonSharp.Interpreter.Debugging.SourceRef)">GetAction(Int32, SourceRef)</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine to get what action to do next.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DebuggerAction GetAction(int ip, SourceRef sourceref)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ip</span></td>
+        <td><p>The instruction pointer in bytecode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.SourceRef.html">SourceRef</a></td>
+        <td><span class="parametername">sourceref</span></td>
+        <td><p>The source reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.DebuggerAction.html">DebuggerAction</a></td>
+        <td><p>T</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_GetDebuggerCaps_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetDebuggerCaps*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_GetDebuggerCaps" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetDebuggerCaps">GetDebuggerCaps()</h4>
+  <div class="markdown level1 summary"><p>Gets the debugger caps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DebuggerCaps GetDebuggerCaps()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.DebuggerCaps.html">DebuggerCaps</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_GetWatchItems_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetWatchItems*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_GetWatchItems" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.GetWatchItems">GetWatchItems()</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine to get which expressions are active
+watches in the debugger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DynamicExpression&gt; GetWatchItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MoonSharp.Interpreter.DynamicExpression.html">DynamicExpression</a>&gt;</td>
+        <td><p>A list of watches</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_IsPauseRequested_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.IsPauseRequested*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_IsPauseRequested" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.IsPauseRequested">IsPauseRequested()</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine at execution time to check if a break has
+been requested. Should return pretty fast as it's called A LOT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPauseRequested()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_RefreshBreakpoints_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.RefreshBreakpoints*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_RefreshBreakpoints_IEnumerable_MoonSharp_Interpreter_Debugging_SourceRef__" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.RefreshBreakpoints(IEnumerable{MoonSharp.Interpreter.Debugging.SourceRef})">RefreshBreakpoints(IEnumerable&lt;SourceRef&gt;)</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine to refresh the breakpoint list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RefreshBreakpoints(IEnumerable&lt;SourceRef&gt; refs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MoonSharp.Interpreter.Debugging.SourceRef.html">SourceRef</a>&gt;</td>
+        <td><span class="parametername">refs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_SetByteCode_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetByteCode*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_SetByteCode_System_String___" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetByteCode(System.String[])">SetByteCode(String[])</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine  when the bytecode changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetByteCode(string[] byteCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">byteCode</span></td>
+        <td><p>The bytecode source</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_SetDebugService_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetDebugService*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_SetDebugService_MoonSharp_Interpreter_Debugging_DebugService_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetDebugService(MoonSharp.Interpreter.Debugging.DebugService)">SetDebugService(DebugService)</h4>
+  <div class="markdown level1 summary"><p>Sets the debug service for this debugger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDebugService(DebugService debugService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.DebugService.html">DebugService</a></td>
+        <td><span class="parametername">debugService</span></td>
+        <td><p>The debug service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_SetSourceCode_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetSourceCode*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_SetSourceCode_MoonSharp_Interpreter_Debugging_SourceCode_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SetSourceCode(MoonSharp.Interpreter.Debugging.SourceCode)">SetSourceCode(SourceCode)</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine  when a source code is added or changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSourceCode(SourceCode sourceCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.SourceCode.html">SourceCode</a></td>
+        <td><span class="parametername">sourceCode</span></td>
+        <td><p>The source code object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_SignalExecutionEnded_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SignalExecutionEnded*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_SignalExecutionEnded" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SignalExecutionEnded">SignalExecutionEnded()</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine when the execution ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SignalExecutionEnded()</code></pre>
+  </div>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_SignalRuntimeException_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SignalRuntimeException*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_SignalRuntimeException_MoonSharp_Interpreter_ScriptRuntimeException_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.SignalRuntimeException(MoonSharp.Interpreter.ScriptRuntimeException)">SignalRuntimeException(ScriptRuntimeException)</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine when a runtime error occurs.
+The debugger can return true to signal the engine that it wants to break
+into the source of the error. If it does so, it should also return true
+to subsequent calls to IsPauseRequested().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SignalRuntimeException(ScriptRuntimeException ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.ScriptRuntimeException.html">ScriptRuntimeException</a></td>
+        <td><span class="parametername">ex</span></td>
+        <td><p>The runtime exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if this error should break execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Debugging_IDebugger_Update_" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.Update*"></a>
+  <h4 id="MoonSharp_Interpreter_Debugging_IDebugger_Update_MoonSharp_Interpreter_Debugging_WatchType_IEnumerable_MoonSharp_Interpreter_Debugging_WatchItem__" data-uid="MoonSharp.Interpreter.Debugging.IDebugger.Update(MoonSharp.Interpreter.Debugging.WatchType,IEnumerable{MoonSharp.Interpreter.Debugging.WatchItem})">Update(WatchType, IEnumerable&lt;WatchItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Called by the script engine to update watches of a given type. Note
+that this method is not called only for watches in the strictest term,
+but also for the stack, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Update(WatchType watchType, IEnumerable&lt;WatchItem&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Debugging.WatchType.html">WatchType</a></td>
+        <td><span class="parametername">watchType</span></td>
+        <td><p>Type of the watch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MoonSharp.Interpreter.Debugging.WatchItem.html">WatchItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

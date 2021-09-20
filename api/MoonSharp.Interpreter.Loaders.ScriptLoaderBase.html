@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScriptLoaderBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScriptLoaderBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase" class="text-break">Class ScriptLoaderBase
+  </h1>
+  <div class="markdown level0 summary"><p>A base implementation of IScriptLoader, offering resolution of module names.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ScriptLoaderBase</span></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Loaders.EmbeddedResourcesScriptLoader.html">EmbeddedResourcesScriptLoader</a></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Loaders.FileSystemScriptLoader.html">FileSystemScriptLoader</a></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Loaders.UnityAssetsScriptLoader.html">UnityAssetsScriptLoader</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MoonSharp.Interpreter.Loaders.IScriptLoader.html">IScriptLoader</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Loaders.html">MoonSharp.Interpreter.Loaders</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScriptLoaderBase : object, IScriptLoader</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_IgnoreLuaPathGlobal_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.IgnoreLuaPathGlobal*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_IgnoreLuaPathGlobal" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.IgnoreLuaPathGlobal">IgnoreLuaPathGlobal</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the LUA_PATH global is checked or not to get the path where modules are contained.
+If true, the LUA_PATH global is NOT checked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreLuaPathGlobal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ModulePaths_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ModulePaths*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ModulePaths" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ModulePaths">ModulePaths</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the modules paths used by the &quot;require&quot; function. If null, the default paths are used (using
+environment variables etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] ModulePaths { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_GetDefaultEnvironmentPaths_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.GetDefaultEnvironmentPaths*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_GetDefaultEnvironmentPaths" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.GetDefaultEnvironmentPaths">GetDefaultEnvironmentPaths()</h4>
+  <div class="markdown level1 summary"><p>Gets the default environment paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetDefaultEnvironmentPaths()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_LoadFile_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.LoadFile*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_LoadFile_System_String_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.LoadFile(System.String,MoonSharp.Interpreter.Table)">LoadFile(String, Table)</h4>
+  <div class="markdown level1 summary"><p>Opens a file for reading the script code.
+It can return either a string, a byte[] or a Stream.
+If a byte[] is returned, the content is assumed to be a serialized (dumped) bytecode. If it's a string, it's
+assumed to be either a script or the output of a string.dump call. If a Stream, autodetection takes place.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object LoadFile(string file, Table globalContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A string, a byte[] or a Stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveFileName_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveFileName*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveFileName_System_String_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveFileName(System.String,MoonSharp.Interpreter.Table)">ResolveFileName(String, Table)</h4>
+  <div class="markdown level1 summary"><p>Resolves a filename [applying paths, etc.]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ResolveFileName(string filename, Table globalContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveModuleName_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveModuleName*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveModuleName_System_String_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveModuleName(System.String,MoonSharp.Interpreter.Table)">ResolveModuleName(String, Table)</h4>
+  <div class="markdown level1 summary"><p>Resolves the name of a module to a filename (which will later be passed to OpenScriptFile).
+The resolution happens first on paths included in the LUA_PATH global variable (if and only if
+the IgnoreLuaPathGlobal is false), and - if the variable does not exist - by consulting the
+ScriptOptions.ModulesPaths array. Override to provide a different behaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ResolveModuleName(string modname, Table globalContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modname</span></td>
+        <td><p>The modname.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">globalContext</span></td>
+        <td><p>The global context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveModuleName_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveModuleName*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ResolveModuleName_System_String_System_String___" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ResolveModuleName(System.String,System.String[])">ResolveModuleName(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Resolves the name of a module on a set of paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ResolveModuleName(string modname, string[] paths)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modname</span></td>
+        <td><p>The modname.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">paths</span></td>
+        <td><p>The paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ScriptFileExists_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ScriptFileExists*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_ScriptFileExists_System_String_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.ScriptFileExists(System.String)">ScriptFileExists(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a script file exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ScriptFileExists(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The script filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_UnpackStringPaths_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.UnpackStringPaths*"></a>
+  <h4 id="MoonSharp_Interpreter_Loaders_ScriptLoaderBase_UnpackStringPaths_System_String_" data-uid="MoonSharp.Interpreter.Loaders.ScriptLoaderBase.UnpackStringPaths(System.String)">UnpackStringPaths(String)</h4>
+  <div class="markdown level1 summary"><p>Unpacks a string path in a form like &quot;?;?.lua&quot; to an array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] UnpackStringPaths(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Loaders.IScriptLoader.html">IScriptLoader</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

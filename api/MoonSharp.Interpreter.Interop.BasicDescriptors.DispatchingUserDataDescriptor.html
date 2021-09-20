@@ -1,0 +1,1390 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DispatchingUserDataDescriptor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DispatchingUserDataDescriptor
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor" class="text-break">Class DispatchingUserDataDescriptor
+  </h1>
+  <div class="markdown level0 summary"><p>An abstract user data descriptor which accepts members described by <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a> objects and
+correctly dispatches to them.
+Metamethods are also by default dispatched to operator overloads and other similar methods - see
+<a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.html#MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_MoonSharp_Interpreter_Script_System_Object_System_String_">MetaIndex(Script, Object, String)</a> .</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DispatchingUserDataDescriptor</span></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Interop.StandardDescriptors.HardwiredDescriptors.HardwiredUserDataDescriptor.html">HardwiredUserDataDescriptor</a></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Interop.StandardEnumUserDataDescriptor.html">StandardEnumUserDataDescriptor</a></div>
+      <div class="level2"><a class="xref" href="MoonSharp.Interpreter.Interop.StandardUserDataDescriptor.html">StandardUserDataDescriptor</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></div>
+    <div><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOptimizableDescriptor.html">IOptimizableDescriptor</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.html">MoonSharp.Interpreter.Interop.BasicDescriptors</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DispatchingUserDataDescriptor : object, IUserDataDescriptor, IOptimizableDescriptor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.#ctor*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor__ctor_Type_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.#ctor(Type,System.String)">DispatchingUserDataDescriptor(Type, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MoonSharp.Interpreter.Interop.StandardUserDataDescriptor.html">StandardUserDataDescriptor</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DispatchingUserDataDescriptor(Type type, string friendlyName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type this descriptor refers to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendlyName</span></td>
+        <td><p>A friendly name for the type, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_EXPLICIT" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_CAST_EXPLICIT">SPECIALNAME_CAST_EXPLICIT</h4>
+  <div class="markdown level1 summary"><p>The special name used by CLR for explicit cast conversions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_CAST_EXPLICIT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_CAST_IMPLICIT" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_CAST_IMPLICIT">SPECIALNAME_CAST_IMPLICIT</h4>
+  <div class="markdown level1 summary"><p>The special name used by CLR for implicit cast conversions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_CAST_IMPLICIT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_GET" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_INDEXER_GET">SPECIALNAME_INDEXER_GET</h4>
+  <div class="markdown level1 summary"><p>The special name used by CLR for indexer getters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_INDEXER_GET = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SPECIALNAME_INDEXER_SET" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SPECIALNAME_INDEXER_SET">SPECIALNAME_INDEXER_SET</h4>
+  <div class="markdown level1 summary"><p>The special name used by CLR for indexer setters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string SPECIALNAME_INDEXER_SET = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FriendlyName*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FriendlyName" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FriendlyName">FriendlyName</h4>
+  <div class="markdown level1 summary"><p>Gets a human readable friendly name of the descriptor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FriendlyName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MemberNames*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MemberNames" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MemberNames">MemberNames</h4>
+  <div class="markdown level1 summary"><p>Gets the member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; MemberNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Members*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Members" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Members">Members</h4>
+  <div class="markdown level1 summary"><p>Gets the members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IMemberDescriptor&gt;&gt; Members { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMemberNames*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMemberNames" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMemberNames">MetaMemberNames</h4>
+  <div class="markdown level1 summary"><p>Gets the meta member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; MetaMemberNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMembers*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaMembers" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaMembers">MetaMembers</h4>
+  <div class="markdown level1 summary"><p>Gets the meta members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, IMemberDescriptor&gt;&gt; MetaMembers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Name*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Name" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the descriptor (usually, the name of the type described).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Type*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Type" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the type this descriptor refers to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddDynValue*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddDynValue_System_String_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddDynValue(System.String,MoonSharp.Interpreter.DynValue)">AddDynValue(String, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Adds a DynValue as a member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDynValue(string name, DynValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMember_System_String_MoonSharp_Interpreter_Interop_BasicDescriptors_IMemberDescriptor_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMember(System.String,MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor)">AddMember(String, IMemberDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Adds a property to the member list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMember(string name, IMemberDescriptor desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></td>
+        <td><span class="parametername">desc</span></td>
+        <td><p>The descriptor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMetaMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AddMetaMember_System_String_MoonSharp_Interpreter_Interop_BasicDescriptors_IMemberDescriptor_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AddMetaMember(System.String,MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor)">AddMetaMember(String, IMemberDescriptor)</h4>
+  <div class="markdown level1 summary"><p>Adds a member to the meta-members list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMetaMember(string name, IMemberDescriptor desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the metamethod.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></td>
+        <td><span class="parametername">desc</span></td>
+        <td><p>The desc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AsString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_AsString_System_Object_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.AsString(System.Object)">AsString(Object)</h4>
+  <div class="markdown level1 summary"><p>Converts this userdata to string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AsString(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Camelify*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Camelify_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Camelify(System.String)">Camelify(String)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified name from underscore_case to camelCase.
+Just a wrapper over the <a class="xref" href="MoonSharp.Interpreter.Interop.DescriptorHelpers.html">DescriptorHelpers</a> method with the same name,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string Camelify(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.ExecuteIndexer*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_ExecuteIndexer_MoonSharp_Interpreter_Interop_BasicDescriptors_IMemberDescriptor_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.ExecuteIndexer(MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor,MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue,MoonSharp.Interpreter.DynValue)">ExecuteIndexer(IMemberDescriptor, Script, Object, DynValue, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Executes the specified indexer method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DynValue ExecuteIndexer(IMemberDescriptor mdesc, Script script, object obj, DynValue index, DynValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></td>
+        <td><span class="parametername">mdesc</span></td>
+        <td><p>The method descriptor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The indexer parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The dynvalue to set on a setter, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMember(System.String)">FindMember(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the member with a given name. If not found, null is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemberDescriptor FindMember(string memberName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Name of the member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMetaMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_FindMetaMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.FindMetaMember(System.String)">FindMetaMember(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the meta member with a given name. If not found, null is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemberDescriptor FindMetaMember(string memberName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Name of the member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IMemberDescriptor.html">IMemberDescriptor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMember(System.String)">HasMember(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the descriptor contains the specified member (by exact name)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMember(string exactName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exactName</span></td>
+        <td><p>Name of the member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMetaMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_HasMetaMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.HasMetaMember(System.String)">HasMetaMember(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the descriptor contains the specified member in the meta list (by exact name)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMetaMember(string exactName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">exactName</span></td>
+        <td><p>Name of the meta-member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Index*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_Index_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.Index(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue,System.Boolean)">Index(Script, Object, DynValue, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;get&quot; operation. This tries to resolve minor variations of member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynValue Index(Script script, object obj, DynValue index, bool isDirectIndexing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script originating the request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object (null if a static request is done)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDirectIndexing</span></td>
+        <td><p>If set to true, it's indexed with a name, if false it's indexed through brackets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.IsTypeCompatible*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_IsTypeCompatible_Type_System_Object_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.IsTypeCompatible(Type,System.Object)">IsTypeCompatible(Type, Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object is compatible with the specified type.
+Unless a very specific behaviour is needed, the correct implementation is a
+simple &quot; return type.IsInstanceOfType(obj); &quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTypeCompatible(Type type, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaIndex*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MetaIndex_MoonSharp_Interpreter_Script_System_Object_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MetaIndex(MoonSharp.Interpreter.Script,System.Object,System.String)">MetaIndex(Script, Object, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a &quot;meta&quot; operation on this userdata. If a descriptor does not support this functionality,
+it should return &quot;null&quot; (not a nil).
+See <a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html#MoonSharp_Interpreter_Interop_IUserDataDescriptor_MetaIndex_MoonSharp_Interpreter_Script_System_Object_System_String_">MetaIndex(Script, Object, String)</a> for further details.</p>
+<p>If a method exists marked with <a class="xref" href="MoonSharp.Interpreter.MoonSharpUserDataMetamethodAttribute.html">MoonSharpUserDataMetamethodAttribute</a> for the specific
+metamethod requested, that method is returned.</p>
+<p>If the above fails, the following dispatching occur:</p>
+<p>__add, __sub, __mul, __div, __mod and __unm are dispatched to C# operator overloads (if they exist)
+__eq is dispatched to System.Object.Equals.
+__lt and __le are dispatched IComparable.Compare, if the type implements IComparable or IComparable{object}
+__len is dispatched to Length and Count properties, if those exist.
+__iterator is handled if the object implements IEnumerable or IEnumerator.
+__tonumber is dispatched to implicit or explicit conversion operators to standard numeric types.
+__tobool is dispatched to an implicit or explicit conversion operator to bool. If that fails, operator true is used.</p>
+<param name="script">The script originating the request
+<param name="obj">The object (null if a static request is done)
+<param name="metaname">The name of the metamember.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DynValue MetaIndex(Script script, object obj, string metaname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metaname</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMember(System.String)">RemoveMember(String)</h4>
+  <div class="markdown level1 summary"><p>Removes the member with a given name. In case of overloaded functions, all overloads are removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMember(string memberName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Name of the member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMetaMember*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_RemoveMetaMember_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.RemoveMetaMember(System.String)">RemoveMetaMember(String)</h4>
+  <div class="markdown level1 summary"><p>Removes the meta member with a given name. In case of overloaded functions, all overloads are removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMetaMember(string memberName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Name of the member.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SetIndex*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_SetIndex_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.SetIndex(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue,MoonSharp.Interpreter.DynValue,System.Boolean)">SetIndex(Script, Object, DynValue, DynValue, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;set&quot; operation. This tries to resolve minor variations of member names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetIndex(Script script, object obj, DynValue index, DynValue value, bool isDirectIndexing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script originating the request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object (null if a static request is done)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be set</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDirectIndexing</span></td>
+        <td><p>If set to true, it's indexed with a name, if false it's indexed through brackets.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TryIndex*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TryIndex_MoonSharp_Interpreter_Script_System_Object_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TryIndex(MoonSharp.Interpreter.Script,System.Object,System.String)">TryIndex(Script, Object, String)</h4>
+  <div class="markdown level1 summary"><p>Tries to perform an indexing operation by checking methods and properties for the given indexName</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DynValue TryIndex(Script script, object obj, string indexName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>Member name to be indexed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TrySetIndex*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_TrySetIndex_MoonSharp_Interpreter_Script_System_Object_System_String_MoonSharp_Interpreter_DynValue_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.TrySetIndex(MoonSharp.Interpreter.Script,System.Object,System.String,MoonSharp.Interpreter.DynValue)">TrySetIndex(Script, Object, String, DynValue)</h4>
+  <div class="markdown level1 summary"><p>Tries to perform an indexing &quot;set&quot; operation by checking methods and properties for the given indexName</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TrySetIndex(Script script, object obj, string indexName, DynValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
+        <td><span class="parametername">script</span></td>
+        <td><p>The script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indexName</span></td>
+        <td><p>Member name to be indexed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.UpperFirstLetter*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_UpperFirstLetter_System_String_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.UpperFirstLetter(System.String)">UpperFirstLetter(String)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified name to one with an uppercase first letter (something to Something).
+Just a wrapper over the <a class="xref" href="MoonSharp.Interpreter.Interop.DescriptorHelpers.html">DescriptorHelpers</a> method with the same name,</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string UpperFirstLetter(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MoonSharp_Interpreter_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize_" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MoonSharp#Interpreter#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_BasicDescriptors_DispatchingUserDataDescriptor_MoonSharp_Interpreter_Interop_BasicDescriptors_IOptimizableDescriptor_Optimize" data-uid="MoonSharp.Interpreter.Interop.BasicDescriptors.DispatchingUserDataDescriptor.MoonSharp#Interpreter#Interop#BasicDescriptors#IOptimizableDescriptor#Optimize">IOptimizableDescriptor.Optimize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IOptimizableDescriptor.Optimize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a>
+  </div>
+  <div>
+      <a class="xref" href="MoonSharp.Interpreter.Interop.BasicDescriptors.IOptimizableDescriptor.html">IOptimizableDescriptor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

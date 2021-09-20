@@ -1,0 +1,3340 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LuaBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LuaBase
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase">
+  
+  
+  <h1 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase" class="text-break">Class LuaBase
+  </h1>
+  <div class="markdown level0 summary"><p>Classes using the classic interface should inherit from this class.
+This class defines only static methods and is really meant to be used only
+from C# and not other .NET languages.</p>
+<p>For easier operation they should also define:
+using ptrdiff_t = System.Int32;
+using lua_Integer = System.Int32;
+using LUA_INTFRM_T = System.Int64;
+using UNSIGNED_LUA_INTFRM_T = System.UInt64;</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LuaBase</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.html">MoonSharp.Interpreter.Interop.LuaStateInterop</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LuaBase : object</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_INTFRMLEN" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_INTFRMLEN">LUA_INTFRMLEN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string LUA_INTFRMLEN = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_MULTRET" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_MULTRET">LUA_MULTRET</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_MULTRET = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TBOOLEAN" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TBOOLEAN">LUA_TBOOLEAN</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TBOOLEAN = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TFUNCTION" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TFUNCTION">LUA_TFUNCTION</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TFUNCTION = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TLIGHTUSERDATA" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TLIGHTUSERDATA">LUA_TLIGHTUSERDATA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TLIGHTUSERDATA = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TNIL" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TNIL">LUA_TNIL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNIL = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TNONE" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TNONE">LUA_TNONE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNONE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TNUMBER" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TNUMBER">LUA_TNUMBER</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TNUMBER = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TSTRING" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TSTRING">LUA_TSTRING</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TSTRING = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TTABLE" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TTABLE">LUA_TTABLE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TTABLE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TTHREAD" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TTHREAD">LUA_TTHREAD</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TTHREAD = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_TUSERDATA" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_TUSERDATA">LUA_TUSERDATA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const int LUA_TUSERDATA = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ArgAsType_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ArgAsType*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ArgAsType_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_MoonSharp_Interpreter_DataType_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ArgAsType(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,MoonSharp.Interpreter.DataType,System.Boolean)">ArgAsType(LuaState, System.Int32, DataType, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DynValue ArgAsType(LuaState L, System.Int32 pos, DataType type, bool allowNil = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DataType.html">DataType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowNil</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_GetArgument_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.GetArgument*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_GetArgument_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.GetArgument(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">GetArgument(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DynValue GetArgument(LuaState L, System.Int32 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalnum_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalnum*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalnum_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalnum(System.Char)">isalnum(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalnum(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalnum_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalnum*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalnum_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalnum(System.Int32)">isalnum(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalnum(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalpha_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalpha*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalpha_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalpha(System.Char)">isalpha(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalpha(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalpha_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalpha*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isalpha_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isalpha(System.Int32)">isalpha(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isalpha(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_iscntrl_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.iscntrl*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_iscntrl_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.iscntrl(System.Char)">iscntrl(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool iscntrl(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_iscntrl_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.iscntrl*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_iscntrl_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.iscntrl(System.Int32)">iscntrl(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool iscntrl(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isdigit_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isdigit*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isdigit_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isdigit(System.Char)">isdigit(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isdigit(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isdigit_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isdigit*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isdigit_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isdigit(System.Int32)">isdigit(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isdigit(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isgraph_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isgraph*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isgraph_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isgraph(System.Char)">isgraph(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isgraph(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isgraph_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isgraph*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isgraph_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isgraph(System.Int32)">isgraph(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isgraph(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_islower_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.islower*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_islower_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.islower(System.Char)">islower(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool islower(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_islower_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.islower*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_islower_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.islower(System.Int32)">islower(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool islower(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ispunct_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ispunct*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ispunct_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ispunct(System.Char)">ispunct(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ispunct(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ispunct_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ispunct*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_ispunct_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.ispunct(System.Int32)">ispunct(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool ispunct(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isspace_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isspace*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isspace_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isspace(System.Char)">isspace(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isspace(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isspace_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isspace*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isspace_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isspace(System.Int32)">isspace(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isspace(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isupper_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isupper*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isupper_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isupper(System.Char)">isupper(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isupper(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isupper_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isupper*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isupper_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isupper(System.Int32)">isupper(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isupper(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isxdigit_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isxdigit*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_isxdigit_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.isxdigit(System.Char)">isxdigit(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static bool isxdigit(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_QL_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_QL*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LUA_QL_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LUA_QL(System.String)">LUA_QL(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LUA_QL(string p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaAssert_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaAssert*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaAssert_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaAssert(System.Boolean)">LuaAssert(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaAssert(bool p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaCall_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaCall*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaCall_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaCall(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.Int32)">LuaCall(LuaState, System.Int32, System.Int32)</h4>
+  <div class="markdown level1 summary"><p>Calls a function.
+To call a function you must use the following protocol: first, the function to be called is pushed onto the stack; then,
+the arguments to the function are pushed in direct order; that is, the first argument is pushed first. Finally you call
+lua_call; nargs is the number of arguments that you pushed onto the stack. All arguments and the function value are
+popped from the stack when the function is called. The function results are pushed onto the stack when the function
+returns. The number of results is adjusted to nresults, unless nresults is LUA_MULTRET. In this case, all results from
+the function are pushed. Lua takes care that the returned values fit into the stack space. The function results are
+pushed onto the stack in direct order (the first result is pushed first), so that after the call the last result is on
+the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaCall(LuaState L, System.Int32 nargs, System.Int32 nresults = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td><p>The LuaState</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nargs</span></td>
+        <td><p>The number of arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nresults</span></td>
+        <td><p>The number of expected results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaGetTable_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaGetTable*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaGetTable_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaGetTable(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaGetTable(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaGetTable(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaGetTop_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaGetTop*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaGetTop_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaGetTop(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState)">LuaGetTop(LuaState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaGetTop(LuaState L)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaIsString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaIsString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaIsString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaIsString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaIsString(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaIsString(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddChar_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddChar*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddChar_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddChar(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer,System.Char)">LuaLAddChar(LuaLBuffer, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddChar(LuaLBuffer b, char p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddLString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddLString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddLString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddLString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.UInt32)">LuaLAddLString(LuaLBuffer, CharPtr, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddLString(LuaLBuffer b, CharPtr s, uint p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer,System.String)">LuaLAddString(LuaLBuffer, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddString(LuaLBuffer b, string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddValue_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddValue*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLAddValue_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLAddValue(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer)">LuaLAddValue(LuaLBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLAddValue(LuaLBuffer b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLArgCheck*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLArgCheck_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Boolean_System_Int32_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLArgCheck(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Boolean,System.Int32,System.String)">LuaLArgCheck(LuaState, Boolean, System.Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLArgCheck(LuaState L, bool condition, System.Int32 argNum, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLArgError_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLArgError*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLArgError_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLArgError(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.String)">LuaLArgError(LuaState, System.Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLArgError(LuaState L, System.Int32 arg, string p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLBuffInit*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLBuffInit_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLBuffInit(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer)">LuaLBuffInit(LuaState, LuaLBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLBuffInit(LuaState L, LuaLBuffer b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckInt*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckInt_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckInt(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLCheckInt(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaLCheckInt(LuaState L, System.Int32 argNum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argNum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckInteger*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckInteger_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckInteger(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLCheckInteger(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaLCheckInteger(LuaState L, System.Int32 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckLString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckLString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_UInt32__" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckLString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.UInt32@)">LuaLCheckLString(LuaState, System.Int32, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLCheckLString(LuaState L, System.Int32 argNum, out uint l)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">l</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckNumber*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckNumber_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckNumber(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLCheckNumber(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static double LuaLCheckNumber(LuaState L, System.Int32 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckStack*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckStack_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckStack(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.String)">LuaLCheckStack(LuaState, System.Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLCheckStack(LuaState L, System.Int32 n, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLCheckString(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr LuaLCheckString(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckStringStr*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLCheckStringStr_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLCheckStringStr(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLCheckStringStr(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLCheckStringStr(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLError_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLError*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLError_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_String_System_Object___" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLError(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.String,System.Object[])">LuaLError(LuaState, String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaLError(LuaState luaState, string message, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">luaState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLOptInt_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLOptInt*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLOptInt_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLOptInt(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.Int32)">LuaLOptInt(LuaState, System.Int32, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int LuaLOptInt(LuaState L, System.Int32 pos, System.Int32 def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLOptInteger*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLOptInteger_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLOptInteger(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.Int32)">LuaLOptInteger(LuaState, System.Int32, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaLOptInteger(LuaState L, System.Int32 pos, System.Int32 def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLPushResult_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLPushResult*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLPushResult_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaLBuffer_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLPushResult(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer)">LuaLPushResult(LuaLBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaLPushResult(LuaLBuffer b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaLBuffer.html">LuaLBuffer</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLTypeName_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLTypeName*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaLTypeName_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaLTypeName(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaLTypeName(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaLTypeName(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPop_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPop*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPop_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPop(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaPop(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPop(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushInteger_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushInteger*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushInteger_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushInteger(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaPushInteger(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushInteger(LuaState L, System.Int32 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushLiteral*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushLiteral_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_String_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushLiteral(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.String)">LuaPushLiteral(LuaState, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushLiteral(LuaState L, string literalString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">literalString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushLString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushLString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushLString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushLString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.UInt32)">LuaPushLString(LuaState, CharPtr, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushLString(LuaState L, CharPtr s, uint len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushNil_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushNil*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushNil_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushNil(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState)">LuaPushNil(LuaState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushNil(LuaState L)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushValue_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushValue*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaPushValue_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaPushValue(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaPushValue(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void LuaPushValue(LuaState L, System.Int32 arg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToBoolean_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToBoolean*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToBoolean_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToBoolean(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaToBoolean(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaToBoolean(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToLString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToLString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToLString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_System_UInt32__" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToLString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32,System.UInt32@)">LuaToLString(LuaState, System.Int32, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaToLString(LuaState luaState, System.Int32 p, out uint l)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">luaState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">l</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToString_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToString*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaToString_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaToString(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaToString(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string LuaToString(LuaState luaState, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">luaState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaType_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaType*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_LuaType_MoonSharp_Interpreter_Interop_LuaStateInterop_LuaState_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.LuaType(MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState,System.Int32)">LuaType(LuaState, System.Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 LuaType(LuaState L, System.Int32 p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaState.html">LuaState</a></td>
+        <td><span class="parametername">L</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memchr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memchr*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memchr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_Char_System_UInt32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memchr(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.Char,System.UInt32)">memchr(CharPtr, Char, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr memchr(CharPtr ptr, char c, uint count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memcmp_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memcmp*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memcmp_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memcmp(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.Int32)">memcmp(CharPtr, CharPtr, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int memcmp(CharPtr ptr1, CharPtr ptr2, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">ptr1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">ptr2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memcmp_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memcmp*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_memcmp_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_UInt32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.memcmp(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.UInt32)">memcmp(CharPtr, CharPtr, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static System.Int32 memcmp(CharPtr ptr1, CharPtr ptr2, uint size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">ptr1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">ptr2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_sprintf_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.sprintf*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_sprintf_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_Object___" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.sprintf(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.Object[])">sprintf(CharPtr, CharPtr, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void sprintf(CharPtr buffer, CharPtr str, params object[] argv)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">argv</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strchr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strchr*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strchr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strchr(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.Char)">strchr(CharPtr, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strchr(CharPtr str, char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strcpy_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strcpy*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strcpy_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strcpy(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr)">strcpy(CharPtr, CharPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strcpy(CharPtr dst, CharPtr src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strlen_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strlen*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strlen_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strlen(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr)">strlen(CharPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int strlen(CharPtr str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strncpy_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strncpy*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strncpy_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strncpy(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,System.Int32)">strncpy(CharPtr, CharPtr, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strncpy(CharPtr dst, CharPtr src, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strpbrk_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strpbrk*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_strpbrk_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_MoonSharp_Interpreter_Interop_LuaStateInterop_CharPtr_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.strpbrk(MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr,MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr)">strpbrk(CharPtr, CharPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static CharPtr strpbrk(CharPtr str, CharPtr charset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td><span class="parametername">charset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Interop.LuaStateInterop.CharPtr.html">CharPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_tolower_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.tolower*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_tolower_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.tolower(System.Char)">tolower(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char tolower(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_tolower_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.tolower*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_tolower_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.tolower(System.Int32)">tolower(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char tolower(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_toupper_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.toupper*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_toupper_System_Char_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.toupper(System.Char)">toupper(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char toupper(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_toupper_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.toupper*"></a>
+  <h4 id="MoonSharp_Interpreter_Interop_LuaStateInterop_LuaBase_toupper_System_Int32_" data-uid="MoonSharp.Interpreter.Interop.LuaStateInterop.LuaBase.toupper(System.Int32)">toupper(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static char toupper(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

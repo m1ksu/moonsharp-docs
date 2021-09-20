@@ -1,0 +1,1062 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DebugSession
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DebugSession
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession">
+  
+  
+  <h1 id="MoonSharp_VsCodeDebugger_SDK_DebugSession" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession" class="text-break">Class DebugSession
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html">ProtocolServer</a></div>
+    <div class="level2"><span class="xref">DebugSession</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_TRACE">ProtocolServer.TRACE</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_TRACE_RESPONSE">ProtocolServer.TRACE_RESPONSE</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_BUFFER_SIZE">ProtocolServer.BUFFER_SIZE</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_TWO_CRLF">ProtocolServer.TWO_CRLF</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_CONTENT_LENGTH_MATCHER">ProtocolServer.CONTENT_LENGTH_MATCHER</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_Encoding">ProtocolServer.Encoding</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_ProcessLoop_Stream_Stream_">ProtocolServer.ProcessLoop(Stream, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_Stop">ProtocolServer.Stop()</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_SendEvent_MoonSharp_VsCodeDebugger_SDK_Event_">ProtocolServer.SendEvent(Event)</a>
+    </div>
+    <div>
+      <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_SendMessage_MoonSharp_VsCodeDebugger_SDK_ProtocolMessage_">ProtocolServer.SendMessage(ProtocolMessage)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.VsCodeDebugger.SDK.html">MoonSharp.VsCodeDebugger.SDK</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.VsCodeDebugger.dll</h6>
+  <h5 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DebugSession : ProtocolServer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession__ctor_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.#ctor*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession__ctor_System_Boolean_System_Boolean_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.#ctor(System.Boolean,System.Boolean)">DebugSession(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugSession(bool debuggerLinesStartAt1, bool debuggerPathsAreURI = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">debuggerLinesStartAt1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">debuggerPathsAreURI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Attach_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Attach*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Attach_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Attach(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Attach(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Attach(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Continue_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Continue*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Continue_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Continue(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Continue(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Continue(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertClientLineToDebugger_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertClientLineToDebugger*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertClientLineToDebugger_System_Int32_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertClientLineToDebugger(System.Int32)">ConvertClientLineToDebugger(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ConvertClientLineToDebugger(int line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertClientPathToDebugger_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertClientPathToDebugger*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertClientPathToDebugger_System_String_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertClientPathToDebugger(System.String)">ConvertClientPathToDebugger(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string ConvertClientPathToDebugger(string clientPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">clientPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertDebuggerLineToClient_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertDebuggerLineToClient*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertDebuggerLineToClient_System_Int32_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertDebuggerLineToClient(System.Int32)">ConvertDebuggerLineToClient(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ConvertDebuggerLineToClient(int line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertDebuggerPathToClient_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertDebuggerPathToClient*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_ConvertDebuggerPathToClient_System_String_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.ConvertDebuggerPathToClient(System.String)">ConvertDebuggerPathToClient(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string ConvertDebuggerPathToClient(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Disconnect_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Disconnect*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Disconnect_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Disconnect(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Disconnect(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Disconnect(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_DispatchRequest_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.DispatchRequest*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_DispatchRequest_System_String_MoonSharp_Interpreter_Table_MoonSharp_VsCodeDebugger_SDK_Response_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.DispatchRequest(System.String,MoonSharp.Interpreter.Table,MoonSharp.VsCodeDebugger.SDK.Response)">DispatchRequest(String, Table, Response)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DispatchRequest(string command, Table args, Response response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ProtocolServer.html#MoonSharp_VsCodeDebugger_SDK_ProtocolServer_DispatchRequest_System_String_MoonSharp_Interpreter_Table_MoonSharp_VsCodeDebugger_SDK_Response_">ProtocolServer.DispatchRequest(String, Table, Response)</a></div>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Evaluate_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Evaluate*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Evaluate_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Evaluate(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Evaluate(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Evaluate(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Initialize_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Initialize*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Initialize_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Initialize(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Initialize(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Initialize(Response response, Table args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Launch_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Launch*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Launch_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Launch(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Launch(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Launch(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Next_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Next*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Next_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Next(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Next(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Next(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Pause_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Pause*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Pause_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Pause(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Pause(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Pause(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Scopes_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Scopes*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Scopes_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Scopes(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Scopes(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Scopes(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SendErrorResponse_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SendErrorResponse*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SendErrorResponse_MoonSharp_VsCodeDebugger_SDK_Response_System_Int32_System_String_System_Object_System_Boolean_System_Boolean_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SendErrorResponse(MoonSharp.VsCodeDebugger.SDK.Response,System.Int32,System.String,System.Object,System.Boolean,System.Boolean)">SendErrorResponse(Response, Int32, String, Object, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendErrorResponse(Response response, int id, string format, object arguments = null, bool user = true, bool telemetry = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">telemetry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SendResponse_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SendResponse*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SendResponse_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_VsCodeDebugger_SDK_ResponseBody_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SendResponse(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.VsCodeDebugger.SDK.ResponseBody)">SendResponse(Response, ResponseBody)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendResponse(Response response, ResponseBody body = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.ResponseBody.html">ResponseBody</a></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetBreakpoints_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetBreakpoints*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetBreakpoints_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetBreakpoints(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">SetBreakpoints(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SetBreakpoints(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetExceptionBreakpoints_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetExceptionBreakpoints*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetExceptionBreakpoints_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetExceptionBreakpoints(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">SetExceptionBreakpoints(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetExceptionBreakpoints(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetFunctionBreakpoints_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetFunctionBreakpoints*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_SetFunctionBreakpoints_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.SetFunctionBreakpoints(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">SetFunctionBreakpoints(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetFunctionBreakpoints(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Source_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Source*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Source_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Source(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Source(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Source(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StackTrace_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StackTrace*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StackTrace_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StackTrace(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">StackTrace(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void StackTrace(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StepIn_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StepIn*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StepIn_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StepIn(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">StepIn(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void StepIn(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StepOut_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StepOut*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_StepOut_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.StepOut(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">StepOut(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void StepOut(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Threads_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Threads*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Threads_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Threads(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Threads(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Threads(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Variables_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Variables*"></a>
+  <h4 id="MoonSharp_VsCodeDebugger_SDK_DebugSession_Variables_MoonSharp_VsCodeDebugger_SDK_Response_MoonSharp_Interpreter_Table_" data-uid="MoonSharp.VsCodeDebugger.SDK.DebugSession.Variables(MoonSharp.VsCodeDebugger.SDK.Response,MoonSharp.Interpreter.Table)">Variables(Response, Table)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Variables(Response response, Table arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoonSharp.VsCodeDebugger.SDK.Response.html">Response</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MoonSharp.Interpreter.Table.html">Table</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

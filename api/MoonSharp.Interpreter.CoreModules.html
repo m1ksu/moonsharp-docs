@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum CoreModules
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum CoreModules
+   ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MoonSharp.Interpreter.CoreModules">
+  
+  
+  <h1 id="MoonSharp_Interpreter_CoreModules" data-uid="MoonSharp.Interpreter.CoreModules" class="text-break">Enum CoreModules
+  </h1>
+  <div class="markdown level0 summary"><p>Enumeration (combinable as flags) of all the standard library modules</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MoonSharp.Interpreter.html">MoonSharp.Interpreter</a></h6>
+  <h6><strong>Assembly</strong>: MoonSharp.Interpreter.dll</h6>
+  <h5 id="MoonSharp_Interpreter_CoreModules_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum CoreModules : int</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Basic">Basic</td>
+        <td><p>The basic methods. Includes &quot;assert&quot;, &quot;collectgarbage&quot;, &quot;error&quot;, &quot;print&quot;, &quot;select&quot;, &quot;type&quot;, &quot;tonumber&quot; and &quot;tostring&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Bit32">Bit32</td>
+        <td><p>The bit32 package</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Coroutine">Coroutine</td>
+        <td><p>The coroutine package</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Debug">Debug</td>
+        <td><p>The &quot;debug&quot; package (it has limited support)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Dynamic">Dynamic</td>
+        <td><p>The &quot;dynamic&quot; package (introduced by MoonSharp).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_ErrorHandling">ErrorHandling</td>
+        <td><p>The error handling methods: &quot;pcall&quot; and &quot;xpcall&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_GlobalConsts">GlobalConsts</td>
+        <td><p>The global constants: &quot;_G&quot;, &quot;_VERSION&quot; and &quot;_MOONSHARP&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_IO">IO</td>
+        <td><p>The methods of &quot;io&quot; and &quot;file&quot; packages. These are not supported under Unity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Json">Json</td>
+        <td><p>The &quot;json&quot; package (introduced by MoonSharp).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_LoadMethods">LoadMethods</td>
+        <td><p>The load methods: &quot;load&quot;, &quot;loadsafe&quot;, &quot;loadfile&quot;, &quot;loadfilesafe&quot;, &quot;dofile&quot; and &quot;require&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Math">Math</td>
+        <td><p>The math package</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Metatables">Metatables</td>
+        <td><p>The metatable methods : &quot;setmetatable&quot;, &quot;getmetatable&quot;, &quot;rawset&quot;, &quot;rawget&quot;, &quot;rawequal&quot; and &quot;rawlen&quot;.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_None">None</td>
+        <td><p>Value used to specify no modules to be loaded (equals 0).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_OS_System">OS_System</td>
+        <td><p>The methods of &quot;os&quot; package excluding those listed for OS_Time. These are not supported under Unity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_OS_Time">OS_Time</td>
+        <td><p>The time methods of the &quot;os&quot; package: &quot;clock&quot;, &quot;difftime&quot;, &quot;date&quot; and &quot;time&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Preset_Complete">Preset_Complete</td>
+        <td><p>The complete package.
+Beware that using this preset allows scripts unlimited access to the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Preset_Default">Preset_Default</td>
+        <td><p>The default preset. Includes everything except &quot;debug&quot; as now.
+Beware that using this preset allows scripts unlimited access to the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Preset_HardSandbox">Preset_HardSandbox</td>
+        <td><p>A sort of &quot;hard&quot; sandbox preset, including string, math, table, bit32 packages, constants and table iterators.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Preset_SoftSandbox">Preset_SoftSandbox</td>
+        <td><p>A softer sandbox preset, adding metatables support, error handling, coroutine, time functions, json parsing and dynamic evaluations.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_String">String</td>
+        <td><p>The string package</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_Table">Table</td>
+        <td><p>The table package</p>
+</td>
+      </tr>
+      <tr>
+        <td id="MoonSharp_Interpreter_CoreModules_TableIterators">TableIterators</td>
+        <td><p>The table iterators: &quot;next&quot;, &quot;ipairs&quot; and &quot;pairs&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
