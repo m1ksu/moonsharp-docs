@@ -1003,6 +1003,7 @@ of a base type or implemented interfaces.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IUserDataDescriptor RegisterProxyType&lt;TProxy, TTarget&gt;(Func&lt;TTarget, TProxy&gt; wrapDelegate, InteropAccessMode accessMode = InteropAccessMode.Default, string friendlyName = null)
+
     where TProxy : class where TTarget : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

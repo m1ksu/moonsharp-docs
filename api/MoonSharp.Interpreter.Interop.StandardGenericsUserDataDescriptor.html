@@ -161,8 +161,7 @@
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Name_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Name*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Name" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets the name of the descriptor (usually, the name of the type described).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,8 +186,7 @@
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Type_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Type*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Type" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Gets the type this descriptor refers to</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,8 +213,7 @@
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_AsString_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.AsString*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_AsString_System_Object_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.AsString(System.Object)">AsString(Object)</h4>
-  <div class="markdown level1 summary"><p>Converts this userdata to string</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -235,8 +232,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -259,24 +255,7 @@
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Generate_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Generate*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Generate_Type_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Generate(Type)">Generate(Type)</h4>
-  <div class="markdown level1 summary"><p>Generates a new descriptor for the specified type.</p>
-<p>The purpose is to allow a mechanism by which a type descriptor can replace itself with another
-descriptor for a specific type. For example, descriptors can be created on the fly to support
-generic types through this mechanism.</p>
-<p>The return value should be:
-null - if this descriptor is simply skipped for the specified type
-this - acts as if the descriptor was a vanilla descriptor
-a new descriptor - if a new descriptor should be used in place of this one</p>
-<p>It's recommended that instances of descriptors are cached for future references. One possible way,
-to do the caching is to have the generator register the descriptor through <a class="xref" href="MoonSharp.Interpreter.UserData.html#MoonSharp_Interpreter_UserData_RegisterType_Type_MoonSharp_Interpreter_InteropAccessMode_System_String_">RegisterType(Type, InteropAccessMode, String)</a>.
-In that case, it should query whether the type is exactly registered, through <a class="xref" href="MoonSharp.Interpreter.UserData.html#MoonSharp_Interpreter_UserData_IsTypeRegistered_Type_">IsTypeRegistered(Type)</a></p>
-<p>NOTE-1 : the search for descriptors does NOT stop with the descriptor returned by this type, but
-other descriptors (e.g. for interfaces) might still be added.</p>
-<p>NOTE-2 : the descriptor generation mechanism is not triggered on an exact match of types.</p>
-<p>NOTE-3 : the method is called in the context of a lock over the descriptors registry so no unpredictable changes to the
-registry can come from other threads during the execution of this method. However this method should not take other
-locks, to avoid deadlocks.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -295,8 +274,7 @@ locks, to avoid deadlocks.</p>
       <tr>
         <td><span class="xref">Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The type.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -311,8 +289,7 @@ locks, to avoid deadlocks.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.Interop.IUserDataDescriptor.html">IUserDataDescriptor</a></td>
-        <td><p>Null, this object instance or a new descriptor.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -320,8 +297,7 @@ locks, to avoid deadlocks.</p>
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Index_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Index*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_Index_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.Index(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue,System.Boolean)">Index(Script, Object, DynValue, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;get&quot; operation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,26 +316,22 @@ locks, to avoid deadlocks.</p>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
         <td><span class="parametername">script</span></td>
-        <td><p>The script originating the request</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object (null if a static request is done)</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isDirectIndexing</span></td>
-        <td><p>If set to true, it's indexed with a name, if false it's indexed through brackets.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -382,10 +354,7 @@ locks, to avoid deadlocks.</p>
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_IsTypeCompatible_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.IsTypeCompatible*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_IsTypeCompatible_Type_System_Object_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.IsTypeCompatible(Type,System.Object)">IsTypeCompatible(Type, Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified object is compatible with the specified type.
-Unless a very specific behaviour is needed, the correct implementation is a
-simple &quot; return type.IsInstanceOfType(obj); &quot;</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -404,14 +373,12 @@ simple &quot; return type.IsInstanceOfType(obj); &quot;</p>
       <tr>
         <td><span class="xref">Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The type.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -434,15 +401,7 @@ simple &quot; return type.IsInstanceOfType(obj); &quot;</p>
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_MetaIndex_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.MetaIndex*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_MetaIndex_MoonSharp_Interpreter_Script_System_Object_System_String_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.MetaIndex(MoonSharp.Interpreter.Script,System.Object,System.String)">MetaIndex(Script, Object, String)</h4>
-  <div class="markdown level1 summary"><p>Gets a &quot;meta&quot; operation on this userdata. If a descriptor does not support this functionality,
-it should return &quot;null&quot; (not a nil).</p>
-<p>These standard metamethods can be supported (the return value should be a function accepting the
-classic parameters of the corresponding metamethod):
-__add, __sub, __mul, __div, __div, __pow, __unm, __eq, __lt, __le, __lt, __len, __concat,
-__pairs, __ipairs, __iterator, __call</p>
-<p>These standard metamethods are supported through other calls for efficiency:
-__index, __newindex, __tostring</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -461,20 +420,17 @@ __index, __newindex, __tostring</p>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
         <td><span class="parametername">script</span></td>
-        <td><p>The script originating the request</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object (null if a static request is done)</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">metaname</span></td>
-        <td><p>The name of the metamember.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -497,8 +453,7 @@ __index, __newindex, __tostring</p>
   
   <a id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_SetIndex_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.SetIndex*"></a>
   <h4 id="MoonSharp_Interpreter_Interop_StandardGenericsUserDataDescriptor_SetIndex_MoonSharp_Interpreter_Script_System_Object_MoonSharp_Interpreter_DynValue_MoonSharp_Interpreter_DynValue_System_Boolean_" data-uid="MoonSharp.Interpreter.Interop.StandardGenericsUserDataDescriptor.SetIndex(MoonSharp.Interpreter.Script,System.Object,MoonSharp.Interpreter.DynValue,MoonSharp.Interpreter.DynValue,System.Boolean)">SetIndex(Script, Object, DynValue, DynValue, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Performs an &quot;index&quot; &quot;set&quot; operation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -517,32 +472,27 @@ __index, __newindex, __tostring</p>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.Script.html">Script</a></td>
         <td><span class="parametername">script</span></td>
-        <td><p>The script originating the request</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object (null if a static request is done)</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="MoonSharp.Interpreter.DynValue.html">DynValue</a></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The value to be set</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isDirectIndexing</span></td>
-        <td><p>If set to true, it's indexed with a name, if false it's indexed through brackets.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
